@@ -1,0 +1,160 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pageBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8f9ff"/>
+      <stop offset="50%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fff5f8"/>
+    </linearGradient>
+    <linearGradient id="indigoG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3949ab"/>
+      <stop offset="100%" stop-color="#5c6bc0"/>
+    </linearGradient>
+    <linearGradient id="roseG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c2185b"/>
+      <stop offset="100%" stop-color="#f06292"/>
+    </linearGradient>
+    <linearGradient id="tealG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00695c"/>
+      <stop offset="100%" stop-color="#26c6a0"/>
+    </linearGradient>
+    <linearGradient id="accentBar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3949ab"/>
+      <stop offset="50%" stop-color="#5c6bc0"/>
+      <stop offset="100%" stop-color="#f06292"/>
+    </linearGradient>
+    <filter id="softSh">
+      <feDropShadow dx="0" dy="5" stdDeviation="14" flood-color="#3949ab" flood-opacity="0.11"/>
+    </filter>
+    <filter id="cardSh">
+      <feDropShadow dx="0" dy="2" stdDeviation="7" flood-color="#3949ab" flood-opacity="0.09"/>
+    </filter>
+    <filter id="glowI">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#5c6bc0" flood-opacity="0.20"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="400" fill="url(#pageBg)"/>
+
+  <!-- Soft blobs - login/security aesthetic -->
+  <ellipse cx="516" cy="58" rx="132" ry="84" fill="#e8eaf6" opacity="0.58"/>
+  <ellipse cx="516" cy="58" rx="78" ry="50" fill="#c5cae9" opacity="0.42"/>
+  <ellipse cx="86" cy="350" rx="108" ry="70" fill="#fce4ec" opacity="0.52"/>
+  <ellipse cx="86" cy="350" rx="62" ry="42" fill="#f8bbd0" opacity="0.40"/>
+
+  <!-- Lock icon watermark -->
+  <text x="456" y="300" font-family="Arial,sans-serif" font-size="80" fill="#e8eaf6" opacity="0.48">🔒</text>
+
+  <!-- Floating accent shapes -->
+  <rect x="466" y="24" width="15" height="15" rx="3.5" fill="#5c6bc0" fill-opacity="0.14" transform="rotate(20,474,32)"/>
+  <rect x="502" y="46" width="11" height="11" rx="2.5" fill="#f06292" fill-opacity="0.16" transform="rotate(-14,508,52)"/>
+  <circle cx="549" cy="26" r="5.5" fill="#5c6bc0" fill-opacity="0.22"/>
+  <circle cx="538" cy="87" r="3.5" fill="#c2185b" fill-opacity="0.18"/>
+  <circle cx="482" cy="96" r="3" fill="#3949ab" fill-opacity="0.18"/>
+  <rect x="14" y="240" width="12" height="12" rx="3" fill="#3949ab" fill-opacity="0.09" transform="rotate(18,20,246)"/>
+  <circle cx="29" cy="296" r="4.5" fill="#f06292" fill-opacity="0.18"/>
+  <circle cx="12" cy="344" r="4" fill="#5c6bc0" fill-opacity="0.14"/>
+
+  <!-- ===== LEFT CONTENT ===== -->
+  <!-- Badge -->
+  <rect x="42" y="26" width="200" height="27" rx="13.5" fill="url(#indigoG)" filter="url(#glowI)"/>
+  <text x="142" y="43" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="700" fill="#ffffff" letter-spacing="0.8">🔐 LOGIN GUIDE 2026</text>
+
+  <!-- Main headline -->
+  <text x="42" y="104" font-family="'Segoe UI',Arial,sans-serif" font-size="34" font-weight="900" fill="#1a1a3e">GoHighLevel</text>
+  <text x="42" y="144" font-family="'Segoe UI',Arial,sans-serif" font-size="34" font-weight="800" fill="#3949ab">Login</text>
+
+  <!-- Accent bar -->
+  <rect x="42" y="154" width="292" height="5" rx="2.5" fill="url(#accentBar)"/>
+
+  <!-- Subtitle -->
+  <text x="42" y="179" font-family="'Segoe UI',Arial,sans-serif" font-size="12" fill="#4a4a6a">Access Your Account, Fix Issues</text>
+  <text x="42" y="197" font-family="'Segoe UI',Arial,sans-serif" font-size="12" fill="#4a4a6a">&amp; Manage Settings — Full 2026 Guide</text>
+
+  <!-- Feature pills -->
+  <rect x="42" y="216" width="92" height="24" rx="12" fill="#e8eaf6" stroke="#5c6bc0" stroke-width="0.8"/>
+  <text x="88" y="232" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9.5" font-weight="600" fill="#3949ab">App.GHL.com</text>
+  <rect x="144" y="216" width="76" height="24" rx="12" fill="#fce4ec" stroke="#f06292" stroke-width="0.8"/>
+  <text x="182" y="232" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9.5" font-weight="600" fill="#c2185b">2FA Setup</text>
+  <rect x="230" y="216" width="88" height="24" rx="12" fill="#e8eaf6" stroke="#5c6bc0" stroke-width="0.8"/>
+  <text x="274" y="232" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9.5" font-weight="600" fill="#3949ab">Reset Password</text>
+
+  <!-- Stat cards -->
+  <rect x="42" y="254" width="82" height="52" rx="12" fill="#ffffff" filter="url(#cardSh)"/>
+  <rect x="42" y="254" width="82" height="4" rx="2" fill="url(#indigoG)"/>
+  <text x="83" y="278" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="17" font-weight="900" fill="#3949ab">3</text>
+  <text x="83" y="296" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#888aaa">Login Methods</text>
+
+  <rect x="136" y="254" width="82" height="52" rx="12" fill="#ffffff" filter="url(#cardSh)"/>
+  <rect x="136" y="254" width="82" height="4" rx="2" fill="url(#roseG)"/>
+  <text x="177" y="278" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="17" font-weight="900" fill="#c2185b">SSO</text>
+  <text x="177" y="296" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#888aaa">Supported</text>
+
+  <rect x="230" y="254" width="82" height="52" rx="12" fill="#ffffff" filter="url(#cardSh)"/>
+  <rect x="230" y="254" width="82" height="4" rx="2" fill="url(#tealG)"/>
+  <text x="271" y="278" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="16" font-weight="900" fill="#00695c">Mobile</text>
+  <text x="271" y="296" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#888aaa">App Login</text>
+
+  <!-- CTAs -->
+  <rect x="42" y="322" width="148" height="30" rx="15" fill="url(#indigoG)"/>
+  <text x="116" y="341" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11.5" font-weight="700" fill="#ffffff">grow-highlevel.com</text>
+  <rect x="200" y="322" width="120" height="30" rx="15" fill="#ffffff" stroke="#5c6bc0" stroke-width="1.2"/>
+  <text x="260" y="341" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="700" fill="#3949ab">Get Help →</text>
+
+  <text x="42" y="390" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#aaaacc">grow-highlevel.com · GoHighLevel Login Complete Guide 2026</text>
+
+  <!-- ===== RIGHT: Login form mockup card ===== -->
+  <rect x="354" y="58" width="232" height="326" rx="20" fill="#ffffff" filter="url(#softSh)"/>
+  <!-- Top gradient band -->
+  <rect x="354" y="58" width="232" height="8" rx="6" fill="url(#accentBar)"/>
+
+  <!-- Logo/title area -->
+  <rect x="370" y="76" width="200" height="38" rx="10" fill="#f8f9ff"/>
+  <rect x="390" y="85" width="32" height="22" rx="6" fill="url(#indigoG)"/>
+  <text x="406" y="100" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="800" fill="#ffffff">GHL</text>
+  <text x="432" y="91" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="#3949ab">GoHighLevel</text>
+  <text x="432" y="104" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#7a8aaa">app.gohighlevel.com</text>
+
+  <!-- Sign in heading -->
+  <text x="470" y="134" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="13" font-weight="700" fill="#1a1a3e">Sign In to Your Account</text>
+
+  <!-- Email field -->
+  <text x="372" y="153" font-family="'Segoe UI',Arial,sans-serif" font-size="9" font-weight="600" fill="#5a6a8a">Email Address</text>
+  <rect x="370" y="158" width="200" height="28" rx="8" fill="#f0f2ff" stroke="#c5cae9" stroke-width="1"/>
+  <text x="384" y="175" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#8890aa">your@agency.com</text>
+
+  <!-- Password field -->
+  <text x="372" y="200" font-family="'Segoe UI',Arial,sans-serif" font-size="9" font-weight="600" fill="#5a6a8a">Password</text>
+  <rect x="370" y="205" width="200" height="28" rx="8" fill="#f0f2ff" stroke="#c5cae9" stroke-width="1"/>
+  <text x="384" y="222" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#8890aa">••••••••••••</text>
+  <text x="558" y="222" text-anchor="end" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#5c6bc0">Show</text>
+
+  <!-- Remember + Forgot -->
+  <rect x="370" y="242" width="12" height="12" rx="2" fill="#e8eaf6" stroke="#5c6bc0" stroke-width="0.8"/>
+  <rect x="370" y="242" width="12" height="12" rx="2" fill="#3949ab"/>
+  <text x="376" y="252" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#ffffff">✓</text>
+  <text x="388" y="252" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#5a6a8a">Remember me</text>
+  <text x="568" y="252" text-anchor="end" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#c2185b">Forgot password?</text>
+
+  <!-- Sign in button -->
+  <rect x="370" y="264" width="200" height="32" rx="10" fill="url(#indigoG)"/>
+  <text x="470" y="284" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11.5" font-weight="700" fill="#ffffff">Sign In</text>
+
+  <!-- Divider -->
+  <line x1="370" y1="308" x2="432" y2="308" stroke="#e8eaf6" stroke-width="1"/>
+  <text x="470" y="312" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#9e9eb8">or continue with</text>
+  <line x1="508" y1="308" x2="570" y2="308" stroke="#e8eaf6" stroke-width="1"/>
+
+  <!-- SSO / Google option -->
+  <rect x="370" y="320" width="200" height="28" rx="8" fill="#ffffff" stroke="#e8eaf6" stroke-width="1"/>
+  <text x="470" y="337" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9.5" fill="#5a6a8a">🔵 Sign in with Google / SSO</text>
+
+  <!-- 2FA note -->
+  <rect x="370" y="358" width="200" height="18" rx="6" fill="#e8eaf6"/>
+  <text x="470" y="370" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#3949ab">🔐 2FA enabled for your account</text>
+
+  <!-- AI tag -->
+  <rect x="380" y="44" width="126" height="20" rx="10" fill="#e8eaf6" stroke="#5c6bc0" stroke-width="0.8"/>
+  <circle cx="394" cy="54" r="4.5" fill="#3949ab"/>
+  <circle cx="394" cy="54" r="2" fill="#ffffff"/>
+  <text x="450" y="58" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9.5" font-weight="700" fill="#3949ab">Secure Login Guide</text>
+</svg>

@@ -1,0 +1,200 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pageBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f2f6ff"/>
+      <stop offset="45%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#edfbf8"/>
+    </linearGradient>
+    <linearGradient id="blueG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d3b8e"/>
+      <stop offset="100%" stop-color="#1565c0"/>
+    </linearGradient>
+    <linearGradient id="tealG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00695c"/>
+      <stop offset="100%" stop-color="#1de9b6"/>
+    </linearGradient>
+    <linearGradient id="brandG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7b1fa2"/>
+      <stop offset="100%" stop-color="#ce93d8"/>
+    </linearGradient>
+    <linearGradient id="barAccent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0d3b8e"/>
+      <stop offset="45%" stop-color="#0097a7"/>
+      <stop offset="100%" stop-color="#1de9b6"/>
+    </linearGradient>
+    <linearGradient id="cardW" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f5f9ff"/>
+    </linearGradient>
+    <filter id="softSh">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#0d3b8e" flood-opacity="0.11"/>
+    </filter>
+    <filter id="cardSh">
+      <feDropShadow dx="0" dy="2" stdDeviation="7" flood-color="#0d3b8e" flood-opacity="0.08"/>
+    </filter>
+    <filter id="glowB">
+      <feDropShadow dx="0" dy="0" stdDeviation="7" flood-color="#1565c0" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="400" fill="url(#pageBg)" rx="14"/>
+
+  <!-- Tech circuit lines -->
+  <g stroke="#1565c0" stroke-width="0.55" fill="none" opacity="0.07">
+    <path d="M0 42 H52 V16 H118 V42 H182"/>
+    <path d="M0 92 H30 V64 H86"/>
+    <path d="M600 52 H540 V20 H468 V52"/>
+    <path d="M600 118 H556 V80 H492 V52"/>
+    <path d="M0 332 H46 V362 H106 V340 H165"/>
+    <path d="M600 315 H546 V350 H488 V372 H422"/>
+    <path d="M188 400 V372 H228 V388"/>
+    <path d="M398 400 V366 H435 V384"/>
+  </g>
+  <g fill="#0d3b8e" opacity="0.11">
+    <circle cx="52" cy="42" r="3.5"/><circle cx="118" cy="42" r="3.5"/>
+    <circle cx="30" cy="92" r="2.5"/><circle cx="86" cy="64" r="2.5"/>
+    <circle cx="540" cy="52" r="3.5"/><circle cx="468" cy="52" r="3.5"/>
+    <circle cx="556" cy="118" r="2.5"/><circle cx="492" cy="80" r="2.5"/>
+    <circle cx="46" cy="332" r="3"/><circle cx="106" cy="340" r="2.5"/>
+    <circle cx="488" cy="350" r="3"/><circle cx="422" cy="372" r="2.5"/>
+  </g>
+
+  <!-- Orb top right -->
+  <circle cx="528" cy="76" r="118" fill="#0d3b8e" fill-opacity="0.04"/>
+  <circle cx="528" cy="76" r="72" fill="#1565c0" fill-opacity="0.055"/>
+  <circle cx="528" cy="76" r="38" fill="#1976d2" fill-opacity="0.08"/>
+  <circle cx="528" cy="76" r="17" fill="#1976d2" fill-opacity="0.14"/>
+
+  <!-- Purple brand orb bottom right -->
+  <circle cx="560" cy="340" r="70" fill="#7b1fa2" fill-opacity="0.05"/>
+  <circle cx="560" cy="340" r="40" fill="#ce93d8" fill-opacity="0.07"/>
+
+  <!-- Teal orb bottom left -->
+  <circle cx="68" cy="352" r="84" fill="#00695c" fill-opacity="0.05"/>
+  <circle cx="68" cy="352" r="48" fill="#1de9b6" fill-opacity="0.07"/>
+
+  <!-- AI neural ring -->
+  <g opacity="0.09" stroke="#1565c0" stroke-width="1.2" fill="none">
+    <circle cx="528" cy="76" r="58"/>
+    <circle cx="528" cy="76" r="42"/>
+    <line x1="528" y1="18" x2="528" y2="134"/>
+    <line x1="470" y1="76" x2="586" y2="76"/>
+    <line x1="487" y1="35" x2="569" y2="117"/>
+    <line x1="569" y1="35" x2="487" y2="117"/>
+  </g>
+  <circle cx="528" cy="76" r="6" fill="#1565c0" fill-opacity="0.18"/>
+
+  <!-- Floating particles -->
+  <g opacity="0.26">
+    <rect x="11" y="155" width="9" height="9" rx="2" fill="#1565c0" transform="rotate(18,15,160)"/>
+    <rect x="19" y="224" width="7" height="7" rx="1.5" fill="#1de9b6" transform="rotate(-12,22,228)"/>
+    <circle cx="7" cy="192" r="3.5" fill="#0d3b8e"/>
+    <circle cx="29" cy="172" r="2.5" fill="#00897b"/>
+  </g>
+
+  <!-- ===== LEFT CONTENT ===== -->
+  <!-- Top badge -->
+  <rect x="42" y="27" width="222" height="27" rx="13.5" fill="url(#blueG)" filter="url(#glowB)"/>
+  <circle cx="57" cy="40.5" r="6" fill="#ffffff" fill-opacity="0.22"/>
+  <circle cx="57" cy="40.5" r="3" fill="#ffffff"/>
+  <text x="142" y="45" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="700" fill="#ffffff" letter-spacing="1.4">WHITE LABEL GUIDE 2026</text>
+
+  <!-- Main headline -->
+  <text x="42" y="106" font-family="'Segoe UI',Arial,sans-serif" font-size="37" font-weight="900" fill="#0d2240">GoHighLevel</text>
+  <text x="42" y="150" font-family="'Segoe UI',Arial,sans-serif" font-size="33" font-weight="800" fill="#0d3b8e">White Label</text>
+
+  <!-- Accent underline bar -->
+  <rect x="42" y="160" width="306" height="5" rx="2.5" fill="url(#barAccent)"/>
+
+  <!-- Subtitle -->
+  <text x="42" y="188" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#3a5a7a">Build Your Own SaaS Brand with</text>
+  <text x="42" y="208" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#3a5a7a">GoHighLevel — Complete Agency Guide</text>
+
+  <!-- Feature chips -->
+  <rect x="42" y="228" width="94" height="25" rx="12.5" fill="#e8f5e9" stroke="#43a047" stroke-width="0.8"/>
+  <text x="89" y="245" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="600" fill="#2e7d32">Your Brand</text>
+
+  <rect x="146" y="228" width="88" height="25" rx="12.5" fill="#e3f2fd" stroke="#1976d2" stroke-width="0.8"/>
+  <text x="190" y="245" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="600" fill="#0d47a1">SaaS Income</text>
+
+  <rect x="244" y="228" width="94" height="25" rx="12.5" fill="#f3e5f5" stroke="#9c27b0" stroke-width="0.8"/>
+  <text x="291" y="245" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="600" fill="#6a1b9a">White-Label</text>
+
+  <!-- Stats row -->
+  <rect x="42" y="268" width="290" height="50" rx="10" fill="#ffffff" stroke="#dde8f5" stroke-width="1" filter="url(#cardSh)"/>
+  <text x="86" y="288" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="18" font-weight="800" fill="#0d3b8e">$497</text>
+  <text x="86" y="306" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#8ba0b8">SaaS Pro Plan</text>
+  <rect x="154" y="276" width="1" height="26" fill="#e0e8f5"/>
+  <text x="198" y="288" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="18" font-weight="800" fill="#00695c">100%</text>
+  <text x="198" y="306" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#8ba0b8">Your Branding</text>
+  <rect x="258" y="276" width="1" height="26" fill="#e0e8f5"/>
+  <text x="294" y="288" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="18" font-weight="800" fill="#0d3b8e">∞</text>
+  <text x="294" y="306" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#8ba0b8">Sub-Accounts</text>
+
+  <!-- CTA buttons -->
+  <rect x="42" y="336" width="144" height="30" rx="10" fill="url(#tealG)"/>
+  <text x="114" y="355" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#ffffff">grow-highlevel.com</text>
+
+  <rect x="198" y="336" width="132" height="30" rx="10" fill="#e3f2fd" stroke="#1565c0" stroke-width="1"/>
+  <text x="264" y="355" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="700" fill="#0d3b8e">Book Free Call</text>
+
+  <!-- ===== RIGHT: White-label brand mockup card ===== -->
+  <rect x="352" y="76" width="230" height="304" rx="16" fill="url(#cardW)" filter="url(#softSh)"/>
+
+  <!-- Card browser bar -->
+  <rect x="352" y="76" width="230" height="40" rx="16" fill="url(#blueG)"/>
+  <rect x="352" y="98" width="230" height="18" fill="url(#blueG)"/>
+  <circle cx="368" cy="96" r="5" fill="#ffffff" fill-opacity="0.2"/>
+  <circle cx="381" cy="96" r="5" fill="#ffffff" fill-opacity="0.2"/>
+  <circle cx="394" cy="96" r="5" fill="#ffffff" fill-opacity="0.2"/>
+  <text x="467" y="100" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#b3d4f8">your-agency.com</text>
+  <text x="467" y="112" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="8" fill="#b3d4f8">White-Label Dashboard</text>
+
+  <!-- Brand logo area -->
+  <rect x="364" y="126" width="206" height="44" rx="10" fill="#f5f0ff" stroke="#ce93d8" stroke-width="0.8"/>
+  <rect x="374" y="136" width="36" height="24" rx="6" fill="url(#brandG)"/>
+  <text x="392" y="152" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="800" fill="#ffffff">YA</text>
+  <text x="420" y="144" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="700" fill="#4a0072">Your Agency</text>
+  <text x="420" y="158" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#9c27b0">Powered by your brand</text>
+
+  <!-- Feature list in card -->
+  <text x="366" y="192" font-family="'Segoe UI',Arial,sans-serif" font-size="9.5" font-weight="700" fill="#0d3b8e">What You Get:</text>
+
+  <rect x="364" y="198" width="206" height="23" rx="6" fill="#f0f8ff"/>
+  <circle cx="378" cy="209.5" r="6" fill="#1565c0"/>
+  <text x="378" y="213" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="8" font-weight="700" fill="#ffffff">✓</text>
+  <text x="391" y="213" font-family="'Segoe UI',Arial,sans-serif" font-size="9.5" fill="#0d2240">Custom Domain + Logo</text>
+
+  <rect x="364" y="226" width="206" height="23" rx="6" fill="#edfbf5"/>
+  <circle cx="378" cy="237.5" r="6" fill="#00695c"/>
+  <text x="378" y="241" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="8" font-weight="700" fill="#ffffff">✓</text>
+  <text x="391" y="241" font-family="'Segoe UI',Arial,sans-serif" font-size="9.5" fill="#0d2240">Client Sub-Accounts</text>
+
+  <rect x="364" y="254" width="206" height="23" rx="6" fill="#f0f8ff"/>
+  <circle cx="378" cy="265.5" r="6" fill="#1565c0"/>
+  <text x="378" y="269" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="8" font-weight="700" fill="#ffffff">✓</text>
+  <text x="391" y="269" font-family="'Segoe UI',Arial,sans-serif" font-size="9.5" fill="#0d2240">Resell as Your SaaS</text>
+
+  <rect x="364" y="282" width="206" height="23" rx="6" fill="#edfbf5"/>
+  <circle cx="378" cy="293.5" r="6" fill="#00695c"/>
+  <text x="378" y="297" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="8" font-weight="700" fill="#ffffff">✓</text>
+  <text x="391" y="297" font-family="'Segoe UI',Arial,sans-serif" font-size="9.5" fill="#0d2240">Automated Rebilling</text>
+
+  <rect x="364" y="310" width="206" height="23" rx="6" fill="#f5f0ff"/>
+  <circle cx="378" cy="321.5" r="6" fill="#7b1fa2"/>
+  <text x="378" y="325" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="8" font-weight="700" fill="#ffffff">✓</text>
+  <text x="391" y="325" font-family="'Segoe UI',Arial,sans-serif" font-size="9.5" fill="#0d2240">GHL Features Hidden</text>
+
+  <!-- CTA inside card -->
+  <rect x="364" y="342" width="206" height="30" rx="10" fill="url(#tealG)"/>
+  <text x="467" y="361" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="700" fill="#ffffff">Launch Your White-Label</text>
+
+  <!-- AI tag -->
+  <rect x="378" y="62" width="130" height="20" rx="10" fill="#e1f5ee" stroke="#1de9b6" stroke-width="0.8"/>
+  <circle cx="393" cy="72" r="5" fill="#00897b"/>
+  <circle cx="393" cy="72" r="2.5" fill="#ffffff"/>
+  <text x="450" y="76" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9.5" font-weight="700" fill="#00695c">Your Brand. GHL Power.</text>
+
+  <!-- Bottom brand line -->
+  <text x="42" y="392" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#a0b4c8">grow-highlevel.com · GoHighLevel White Label Complete Guide 2026</text>
+</svg>

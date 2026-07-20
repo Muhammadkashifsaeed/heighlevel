@@ -1,0 +1,182 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pageBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f2f7ff"/>
+      <stop offset="50%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#edfbf5"/>
+    </linearGradient>
+    <linearGradient id="blueG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a3572"/>
+      <stop offset="100%" stop-color="#1565c0"/>
+    </linearGradient>
+    <linearGradient id="tealG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00695c"/>
+      <stop offset="100%" stop-color="#1de9b6"/>
+    </linearGradient>
+    <linearGradient id="greenG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2e7d32"/>
+      <stop offset="100%" stop-color="#66bb6a"/>
+    </linearGradient>
+    <linearGradient id="accentBar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0a3572"/>
+      <stop offset="45%" stop-color="#0097a7"/>
+      <stop offset="100%" stop-color="#1de9b6"/>
+    </linearGradient>
+    <linearGradient id="funnelTop" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1565c0"/>
+      <stop offset="100%" stop-color="#42a5f5"/>
+    </linearGradient>
+    <linearGradient id="funnelMid" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0097a7"/>
+      <stop offset="100%" stop-color="#26c6da"/>
+    </linearGradient>
+    <linearGradient id="funnelBot" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00695c"/>
+      <stop offset="100%" stop-color="#1de9b6"/>
+    </linearGradient>
+    <filter id="softSh">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#0a3572" flood-opacity="0.11"/>
+    </filter>
+    <filter id="cardSh">
+      <feDropShadow dx="0" dy="2" stdDeviation="7" flood-color="#0a3572" flood-opacity="0.09"/>
+    </filter>
+    <filter id="glowB">
+      <feDropShadow dx="0" dy="0" stdDeviation="7" flood-color="#1565c0" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="400" fill="url(#pageBg)" rx="14"/>
+
+  <!-- Circuit lines -->
+  <g stroke="#1565c0" stroke-width="0.55" fill="none" opacity="0.07">
+    <path d="M0 38 H52 V12 H122 V38 H188"/>
+    <path d="M0 86 H30 V60 H88"/>
+    <path d="M600 48 H536 V16 H462 V48"/>
+    <path d="M600 114 H552 V76 H488 V48"/>
+    <path d="M0 328 H42 V358 H102 V336 H160"/>
+    <path d="M600 310 H542 V346 H484 V370 H418"/>
+  </g>
+  <g fill="#0a3572" opacity="0.11">
+    <circle cx="52" cy="38" r="3.5"/><circle cx="122" cy="38" r="3.5"/>
+    <circle cx="30" cy="86" r="2.5"/><circle cx="536" cy="48" r="3.5"/>
+    <circle cx="462" cy="48" r="3.5"/><circle cx="42" cy="328" r="3"/>
+    <circle cx="102" cy="336" r="2.5"/><circle cx="484" cy="346" r="3"/>
+  </g>
+
+  <!-- Orbs -->
+  <circle cx="526" cy="72" r="112" fill="#0a3572" fill-opacity="0.04"/>
+  <circle cx="526" cy="72" r="68" fill="#1565c0" fill-opacity="0.055"/>
+  <circle cx="526" cy="72" r="36" fill="#1976d2" fill-opacity="0.08"/>
+  <circle cx="526" cy="72" r="16" fill="#1976d2" fill-opacity="0.14"/>
+  <circle cx="66" cy="346" r="80" fill="#00695c" fill-opacity="0.05"/>
+  <circle cx="66" cy="346" r="46" fill="#1de9b6" fill-opacity="0.07"/>
+
+  <!-- Neural ring -->
+  <g opacity="0.09" stroke="#1565c0" stroke-width="1.2" fill="none">
+    <circle cx="526" cy="72" r="56"/>
+    <circle cx="526" cy="72" r="40"/>
+    <line x1="526" y1="16" x2="526" y2="128"/>
+    <line x1="470" y1="72" x2="582" y2="72"/>
+    <line x1="487" y1="31" x2="565" y2="113"/>
+    <line x1="565" y1="31" x2="487" y2="113"/>
+  </g>
+  <circle cx="526" cy="72" r="6" fill="#1565c0" fill-opacity="0.18"/>
+
+  <!-- Particles -->
+  <g opacity="0.26">
+    <rect x="10" y="155" width="9" height="9" rx="2" fill="#1565c0" transform="rotate(18,14,160)"/>
+    <circle cx="6" cy="192" r="3.5" fill="#0a3572"/>
+    <circle cx="28" cy="172" r="2.5" fill="#00897b"/>
+  </g>
+
+  <!-- ===== LEFT CONTENT ===== -->
+  <rect x="42" y="26" width="226" height="27" rx="13.5" fill="url(#blueG)" filter="url(#glowB)"/>
+  <circle cx="57" cy="39.5" r="6" fill="#ffffff" fill-opacity="0.22"/>
+  <circle cx="57" cy="39.5" r="3" fill="#ffffff"/>
+  <text x="146" y="44" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="700" fill="#ffffff" letter-spacing="1.4">FUNNEL SETUP GUIDE 2026</text>
+
+  <text x="42" y="106" font-family="'Segoe UI',Arial,sans-serif" font-size="36" font-weight="900" fill="#0d2240">GoHighLevel</text>
+  <text x="42" y="146" font-family="'Segoe UI',Arial,sans-serif" font-size="30" font-weight="800" fill="#0a3572">Funnel Setup</text>
+
+  <rect x="42" y="156" width="305" height="5" rx="2.5" fill="url(#accentBar)"/>
+
+  <text x="42" y="182" font-family="'Segoe UI',Arial,sans-serif" font-size="12.5" fill="#3a5a7a">Build High-Converting Funnels</text>
+  <text x="42" y="200" font-family="'Segoe UI',Arial,sans-serif" font-size="12.5" fill="#3a5a7a">That Capture &amp; Convert Leads 24/7</text>
+
+  <!-- Feature chips -->
+  <rect x="42" y="220" width="86" height="25" rx="12.5" fill="#e3f2fd" stroke="#1976d2" stroke-width="0.8"/>
+  <text x="85" y="237" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="600" fill="#0a3572">Landing Page</text>
+
+  <rect x="138" y="220" width="78" height="25" rx="12.5" fill="#e0f7f4" stroke="#00897b" stroke-width="0.8"/>
+  <text x="177" y="237" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="600" fill="#00695c">Order Form</text>
+
+  <rect x="226" y="220" width="80" height="25" rx="12.5" fill="#e3f2fd" stroke="#1976d2" stroke-width="0.8"/>
+  <text x="266" y="237" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="600" fill="#0a3572">Upsell Page</text>
+
+  <!-- Stats row -->
+  <rect x="42" y="260" width="290" height="46" rx="10" fill="#ffffff" stroke="#dde8f5" stroke-width="1" filter="url(#cardSh)"/>
+  <text x="86" y="279" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="17" font-weight="800" fill="#0a3572">3x</text>
+  <text x="86" y="297" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#8ba0b8">More Leads</text>
+  <rect x="152" y="270" width="1" height="24" fill="#e0e8f5"/>
+  <text x="196" y="279" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="17" font-weight="800" fill="#00695c">45%</text>
+  <text x="196" y="297" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#8ba0b8">Conversion Lift</text>
+  <rect x="258" y="270" width="1" height="24" fill="#e0e8f5"/>
+  <text x="294" y="279" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="17" font-weight="800" fill="#0a3572">24/7</text>
+  <text x="294" y="297" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#8ba0b8">Auto Follow-Up</text>
+
+  <!-- CTAs -->
+  <rect x="42" y="322" width="144" height="30" rx="10" fill="url(#tealG)"/>
+  <text x="114" y="341" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#ffffff">grow-highlevel.com</text>
+  <rect x="196" y="322" width="136" height="30" rx="10" fill="#e3f2fd" stroke="#1565c0" stroke-width="1"/>
+  <text x="264" y="341" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="700" fill="#0a3572">Book Free Call</text>
+
+  <text x="42" y="390" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#a0b4c8">grow-highlevel.com · GoHighLevel Funnel Setup Complete Guide 2026</text>
+
+  <!-- ===== RIGHT: Funnel diagram card ===== -->
+  <rect x="350" y="76" width="232" height="308" rx="16" fill="#ffffff" filter="url(#softSh)"/>
+  <rect x="350" y="76" width="232" height="42" rx="16" fill="url(#blueG)"/>
+  <rect x="350" y="100" width="232" height="18" fill="url(#blueG)"/>
+  <circle cx="366" cy="97" r="5" fill="#fc5f5f"/>
+  <circle cx="381" cy="97" r="5" fill="#ffbd2e"/>
+  <circle cx="396" cy="97" r="5" fill="#28ca42"/>
+  <text x="466" y="112" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#b3d4f8">Funnel Builder — Live</text>
+
+  <!-- Funnel stages -->
+  <text x="364" y="136" font-family="'Segoe UI',Arial,sans-serif" font-size="9.5" font-weight="700" fill="#0a3572">Funnel Structure</text>
+
+  <!-- Stage 1: Landing Page (widest) -->
+  <polygon points="362,148 562,148 542,182 382,182" fill="url(#funnelTop)" opacity="0.88"/>
+  <text x="462" y="169" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="#ffffff">Landing Page</text>
+  <text x="462" y="180" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="8" fill="#e3f2fd">Visitor Traffic</text>
+
+  <!-- Stage 2: Opt-in -->
+  <polygon points="382,186 542,186 526,218 398,218" fill="url(#funnelMid)" opacity="0.88"/>
+  <text x="462" y="205" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="#ffffff">Opt-In / Form</text>
+  <text x="462" y="216" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="8" fill="#e0f7fa">Lead Capture</text>
+
+  <!-- Stage 3: Thank you / Upsell -->
+  <polygon points="398,222 526,222 514,254 410,254" fill="url(#funnelMid)" opacity="0.82"/>
+  <text x="462" y="241" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="#ffffff">Upsell / OTO</text>
+  <text x="462" y="252" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="8" fill="#e0f7fa">Revenue Boost</text>
+
+  <!-- Stage 4: Conversion (narrowest) -->
+  <polygon points="410,258 514,258 504,288 420,288" fill="url(#funnelBot)" opacity="0.92"/>
+  <text x="462" y="276" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="#ffffff">Conversion</text>
+  <text x="462" y="287" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="8" fill="#cdfaf0">Closed Deal</text>
+
+  <!-- Output badge -->
+  <rect x="438" y="294" width="48" height="22" rx="8" fill="#00695c"/>
+  <text x="462" y="308" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="#ffffff">SALE</text>
+
+  <!-- CRM integration note -->
+  <rect x="362" y="326" width="206" height="44" rx="10" fill="url(#tealG)"/>
+  <text x="465" y="343" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="#ffffff">Connected to CRM</text>
+  <text x="465" y="356" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#cdfaf0">Auto follow-up on every lead</text>
+  <text x="465" y="366" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#cdfaf0">grow-highlevel.com</text>
+
+  <!-- AI tag -->
+  <rect x="375" y="62" width="130" height="20" rx="10" fill="#e1f5ee" stroke="#1de9b6" stroke-width="0.8"/>
+  <circle cx="389" cy="72" r="5" fill="#00897b"/>
+  <circle cx="389" cy="72" r="2.5" fill="#ffffff"/>
+  <text x="447" y="76" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9.5" font-weight="700" fill="#00695c">AI-Powered Funnel</text>
+</svg>

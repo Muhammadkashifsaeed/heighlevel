@@ -1,0 +1,156 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pageBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff8f3"/>
+      <stop offset="50%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f0f4ff"/>
+    </linearGradient>
+    <linearGradient id="orangeG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#bf360c"/>
+      <stop offset="100%" stop-color="#ff7043"/>
+    </linearGradient>
+    <linearGradient id="blueG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d47a1"/>
+      <stop offset="100%" stop-color="#1976d2"/>
+    </linearGradient>
+    <linearGradient id="shopifyG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#004c3f"/>
+      <stop offset="100%" stop-color="#96bf48"/>
+    </linearGradient>
+    <linearGradient id="accentBar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#96bf48"/>
+      <stop offset="40%" stop-color="#ff7043"/>
+      <stop offset="100%" stop-color="#1976d2"/>
+    </linearGradient>
+    <filter id="softSh">
+      <feDropShadow dx="0" dy="5" stdDeviation="14" flood-color="#bf360c" flood-opacity="0.11"/>
+    </filter>
+    <filter id="cardSh">
+      <feDropShadow dx="0" dy="2" stdDeviation="7" flood-color="#0d47a1" flood-opacity="0.09"/>
+    </filter>
+    <filter id="glowO">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#ff7043" flood-opacity="0.20"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="400" fill="url(#pageBg)"/>
+
+  <!-- Ecommerce-style blob decorations -->
+  <ellipse cx="510" cy="55" rx="135" ry="85" fill="#fff3e0" opacity="0.6"/>
+  <ellipse cx="510" cy="55" rx="80" ry="50" fill="#ffe0b2" opacity="0.45"/>
+  <ellipse cx="85" cy="348" rx="108" ry="70" fill="#e8eaf6" opacity="0.52"/>
+  <ellipse cx="85" cy="348" rx="60" ry="40" fill="#c5cae9" opacity="0.4"/>
+
+  <!-- Shopping cart icon watermark -->
+  <text x="450" y="320" font-family="Arial,sans-serif" font-size="80" fill="#fff3e0" opacity="0.5">🛒</text>
+
+  <!-- Floating shapes -->
+  <rect x="464" y="24" width="16" height="16" rx="4" fill="#ff7043" fill-opacity="0.15" transform="rotate(22,472,32)"/>
+  <rect x="502" y="46" width="11" height="11" rx="3" fill="#1976d2" fill-opacity="0.16" transform="rotate(-14,508,52)"/>
+  <circle cx="550" cy="26" r="6" fill="#96bf48" fill-opacity="0.25"/>
+  <circle cx="538" cy="86" r="4" fill="#ff7043" fill-opacity="0.22"/>
+  <circle cx="484" cy="96" r="3" fill="#1976d2" fill-opacity="0.20"/>
+  <rect x="14" y="238" width="13" height="13" rx="3" fill="#0d47a1" fill-opacity="0.10" transform="rotate(18,20,244)"/>
+  <circle cx="30" cy="296" r="5" fill="#ff7043" fill-opacity="0.18"/>
+  <circle cx="12" cy="342" r="4" fill="#96bf48" fill-opacity="0.16"/>
+
+  <!-- ===== LEFT CONTENT ===== -->
+  <!-- Badge -->
+  <rect x="42" y="26" width="232" height="27" rx="13.5" fill="url(#orangeG)" filter="url(#glowO)"/>
+  <text x="158" y="43" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="700" fill="#ffffff" letter-spacing="0.8">🔗 INTEGRATION GUIDE 2026</text>
+
+  <!-- Main headline -->
+  <text x="42" y="96" font-family="'Segoe UI',Arial,sans-serif" font-size="26" font-weight="900" fill="#1a1a2e">Shopify + GoHighLevel</text>
+  <text x="42" y="130" font-family="'Segoe UI',Arial,sans-serif" font-size="26" font-weight="800" fill="#bf360c">Integration</text>
+  <text x="42" y="162" font-family="'Segoe UI',Arial,sans-serif" font-size="22" font-weight="700" fill="#0d47a1">Complete 2026 Guide</text>
+
+  <!-- Accent bar -->
+  <rect x="42" y="172" width="300" height="5" rx="2.5" fill="url(#accentBar)"/>
+
+  <!-- Subtitle -->
+  <text x="42" y="197" font-family="'Segoe UI',Arial,sans-serif" font-size="12" fill="#4a5070">Connect Your Store to CRM,</text>
+  <text x="42" y="215" font-family="'Segoe UI',Arial,sans-serif" font-size="12" fill="#4a5070">Automation &amp; Lead Nurturing</text>
+
+  <!-- Platform pills -->
+  <rect x="42" y="232" width="88" height="24" rx="12" fill="#fff3e0" stroke="#ff7043" stroke-width="1"/>
+  <text x="86" y="248" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="#bf360c">Shopify</text>
+  <!-- Plus sign -->
+  <text x="142" y="249" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="18" font-weight="900" fill="#888aaa">+</text>
+  <rect x="158" y="232" width="108" height="24" rx="12" fill="#e8eaf6" stroke="#1976d2" stroke-width="1"/>
+  <text x="212" y="248" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="#0d47a1">GoHighLevel</text>
+
+  <!-- Stat cards -->
+  <rect x="42" y="272" width="82" height="52" rx="12" fill="#ffffff" filter="url(#cardSh)"/>
+  <rect x="42" y="272" width="82" height="4" rx="2" fill="url(#orangeG)"/>
+  <text x="83" y="296" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="17" font-weight="900" fill="#bf360c">CRM</text>
+  <text x="83" y="315" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#888aaa">Auto-Sync</text>
+
+  <rect x="136" y="272" width="82" height="52" rx="12" fill="#ffffff" filter="url(#cardSh)"/>
+  <rect x="136" y="272" width="82" height="4" rx="2" fill="url(#blueG)"/>
+  <text x="177" y="296" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="17" font-weight="900" fill="#0d47a1">SMS</text>
+  <text x="177" y="315" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#888aaa">Abandoned Cart</text>
+
+  <rect x="230" y="272" width="82" height="52" rx="12" fill="#ffffff" filter="url(#cardSh)"/>
+  <rect x="230" y="272" width="82" height="4" rx="2" fill="url(#shopifyG)"/>
+  <text x="271" y="296" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="17" font-weight="900" fill="#004c3f">Auto</text>
+  <text x="271" y="315" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#888aaa">Nurture</text>
+
+  <!-- CTAs -->
+  <rect x="42" y="340" width="148" height="30" rx="15" fill="url(#orangeG)"/>
+  <text x="116" y="359" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11.5" font-weight="700" fill="#ffffff">grow-highlevel.com</text>
+  <rect x="200" y="340" width="120" height="30" rx="15" fill="#ffffff" stroke="#ff7043" stroke-width="1.2"/>
+  <text x="260" y="359" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="700" fill="#bf360c">Get Started →</text>
+
+  <text x="42" y="392" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#aaaaaa">grow-highlevel.com · Shopify Integration with GoHighLevel 2026</text>
+
+  <!-- ===== RIGHT: Integration flow card ===== -->
+  <rect x="354" y="58" width="230" height="326" rx="20" fill="#ffffff" filter="url(#softSh)"/>
+  <rect x="354" y="58" width="230" height="8" rx="6" fill="url(#accentBar)"/>
+
+  <!-- Card header -->
+  <rect x="370" y="76" width="198" height="36" rx="10" fill="#fff3e0"/>
+  <text x="469" y="90" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="#bf360c">🔗 Integration Flow</text>
+  <text x="469" y="105" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#8a7a6a">What happens after connection</text>
+
+  <!-- Flow steps -->
+  <rect x="370" y="120" width="198" height="30" rx="7" fill="#fff3e0" stroke="#ffccbc" stroke-width="1"/>
+  <rect x="370" y="120" width="5" height="30" rx="3" fill="#ff7043"/>
+  <text x="385" y="133" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="600" fill="#1a1a2e">Shopify Order Placed</text>
+  <text x="385" y="145" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#888aaa">Customer data captured</text>
+
+  <text x="469" y="163" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="12" fill="#ff7043">↓</text>
+
+  <rect x="370" y="168" width="198" height="30" rx="7" fill="#e8eaf6" stroke="#c5cae9" stroke-width="1"/>
+  <rect x="370" y="168" width="5" height="30" rx="3" fill="#1976d2"/>
+  <text x="385" y="181" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="600" fill="#1a1a2e">GHL Contact Created</text>
+  <text x="385" y="193" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#888aaa">Auto CRM sync</text>
+
+  <text x="469" y="211" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="12" fill="#1976d2">↓</text>
+
+  <rect x="370" y="216" width="198" height="30" rx="7" fill="#e8f5e9" stroke="#a5d6a7" stroke-width="1"/>
+  <rect x="370" y="216" width="5" height="30" rx="3" fill="#2e7d32"/>
+  <text x="385" y="229" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="600" fill="#1a1a2e">Automation Triggered</text>
+  <text x="385" y="241" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#888aaa">Welcome email + SMS</text>
+
+  <text x="469" y="259" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="12" fill="#2e7d32">↓</text>
+
+  <rect x="370" y="264" width="198" height="30" rx="7" fill="#fff3e0" stroke="#ffccbc" stroke-width="1"/>
+  <rect x="370" y="264" width="5" height="30" rx="3" fill="#ff7043"/>
+  <text x="385" y="277" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="600" fill="#1a1a2e">Nurture Sequence</text>
+  <text x="385" y="289" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#888aaa">Upsells, reviews, loyalty</text>
+
+  <text x="469" y="307" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="12" fill="#ff7043">↓</text>
+
+  <rect x="370" y="312" width="198" height="30" rx="7" fill="url(#shopifyG)" fill-opacity="0.15" stroke="#96bf48" stroke-width="1"/>
+  <rect x="370" y="312" width="5" height="30" rx="3" fill="#96bf48"/>
+  <text x="385" y="325" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="#004c3f">Repeat Purchase ✓</text>
+  <text x="385" y="337" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#5a8a5a">LTV increased</text>
+
+  <!-- CTA inside card -->
+  <rect x="370" y="354" width="198" height="24" rx="12" fill="url(#orangeG)"/>
+  <text x="469" y="370" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10.5" font-weight="700" fill="#ffffff">Set Up Integration Now</text>
+
+  <!-- Badge -->
+  <rect x="490" y="44" width="80" height="20" rx="10" fill="#fff3e0" stroke="#ff7043" stroke-width="0.8"/>
+  <text x="530" y="58" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9" font-weight="700" fill="#bf360c">E-com + CRM</text>
+</svg>

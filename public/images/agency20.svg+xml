@@ -1,0 +1,112 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pageBg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f3f7ff"/><stop offset="48%" stop-color="#ffffff"/><stop offset="100%" stop-color="#edfbf6"/></linearGradient>
+    <linearGradient id="blueG" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0a3880"/><stop offset="100%" stop-color="#1565c0"/></linearGradient>
+    <linearGradient id="tealG" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#00695c"/><stop offset="100%" stop-color="#1de9b6"/></linearGradient>
+    <linearGradient id="goldG" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#e65100"/><stop offset="100%" stop-color="#fbc02d"/></linearGradient>
+    <linearGradient id="barAccent" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#0a3880"/><stop offset="45%" stop-color="#0097a7"/><stop offset="100%" stop-color="#1de9b6"/></linearGradient>
+    <linearGradient id="card1Bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#e3f2fd"/><stop offset="100%" stop-color="#bbdefb"/></linearGradient>
+    <linearGradient id="card2Bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#e0f7f4"/><stop offset="100%" stop-color="#b2dfdb"/></linearGradient>
+    <linearGradient id="card3Bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#fff8e1"/><stop offset="100%" stop-color="#ffecb3"/></linearGradient>
+    <filter id="softSh"><feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#0a3880" flood-opacity="0.11"/></filter>
+    <filter id="cardSh"><feDropShadow dx="0" dy="2" stdDeviation="7" flood-color="#0a3880" flood-opacity="0.09"/></filter>
+    <filter id="glowB"><feDropShadow dx="0" dy="0" stdDeviation="7" flood-color="#1565c0" flood-opacity="0.22"/></filter>
+  </defs>
+  <rect width="600" height="400" fill="url(#pageBg)" rx="14"/>
+  <g stroke="#1565c0" stroke-width="0.55" fill="none" opacity="0.07">
+    <path d="M0 40 H55 V14 H125 V40 H195"/><path d="M0 88 H32 V62 H90"/>
+    <path d="M600 50 H538 V18 H465 V50"/><path d="M600 116 H554 V78 H490 V50"/>
+    <path d="M0 330 H44 V360 H104 V338 H162"/><path d="M600 312 H544 V348 H486 V372 H420"/>
+  </g>
+  <g fill="#0a3880" opacity="0.11">
+    <circle cx="55" cy="40" r="3.5"/><circle cx="125" cy="40" r="3.5"/>
+    <circle cx="32" cy="88" r="2.5"/><circle cx="538" cy="50" r="3.5"/>
+    <circle cx="465" cy="50" r="3.5"/><circle cx="44" cy="330" r="3"/>
+  </g>
+  <circle cx="530" cy="74" r="115" fill="#0a3880" fill-opacity="0.04"/>
+  <circle cx="530" cy="74" r="70" fill="#1565c0" fill-opacity="0.055"/>
+  <circle cx="530" cy="74" r="36" fill="#1976d2" fill-opacity="0.08"/>
+  <circle cx="530" cy="74" r="16" fill="#1976d2" fill-opacity="0.14"/>
+  <circle cx="68" cy="348" r="82" fill="#00695c" fill-opacity="0.05"/>
+  <circle cx="555" cy="338" r="62" fill="#6a1b9a" fill-opacity="0.05"/>
+  <g opacity="0.09" stroke="#1565c0" stroke-width="1.2" fill="none">
+    <circle cx="530" cy="74" r="58"/><circle cx="530" cy="74" r="40"/>
+    <line x1="530" y1="16" x2="530" y2="132"/><line x1="472" y1="74" x2="588" y2="74"/>
+    <line x1="489" y1="33" x2="571" y2="115"/><line x1="571" y1="33" x2="489" y2="115"/>
+  </g>
+  <circle cx="530" cy="74" r="6" fill="#1565c0" fill-opacity="0.18"/>
+  <g opacity="0.27">
+    <rect x="11" y="152" width="9" height="9" rx="2" fill="#1565c0" transform="rotate(18,15,157)"/>
+    <circle cx="7" cy="190" r="3.5" fill="#0a3880"/>
+    <circle cx="29" cy="170" r="2.5" fill="#00897b"/>
+  </g>
+  <!-- Left content -->
+  <rect x="42" y="26" width="234" height="27" rx="13.5" fill="url(#blueG)" filter="url(#glowB)"/>
+  <circle cx="57" cy="39.5" r="6" fill="#ffffff" fill-opacity="0.22"/>
+  <circle cx="57" cy="39.5" r="3" fill="#ffffff"/>
+  <text x="150" y="44" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="700" fill="#ffffff" letter-spacing="1.4">WHITE LABEL PRICING 2026</text>
+  <text x="42" y="104" font-family="'Segoe UI',Arial,sans-serif" font-size="35" font-weight="900" fill="#0d2240">GoHighLevel</text>
+  <text x="42" y="144" font-family="'Segoe UI',Arial,sans-serif" font-size="28" font-weight="800" fill="#0a3880">White Label</text>
+  <text x="42" y="176" font-family="'Segoe UI',Arial,sans-serif" font-size="28" font-weight="800" fill="#0a3880">Pricing Guide</text>
+  <rect x="42" y="186" width="310" height="5" rx="2.5" fill="url(#barAccent)"/>
+  <text x="42" y="212" font-family="'Segoe UI',Arial,sans-serif" font-size="12.5" fill="#3a5a7a">What You Pay, What You Earn,</text>
+  <text x="42" y="230" font-family="'Segoe UI',Arial,sans-serif" font-size="12.5" fill="#3a5a7a">and Is It Worth It for Your Agency?</text>
+  <!-- 3 pricing cards -->
+  <rect x="42" y="248" width="84" height="76" rx="11" fill="url(#card1Bg)" filter="url(#cardSh)"/>
+  <rect x="42" y="248" width="84" height="5" rx="2.5" fill="url(#blueG)"/>
+  <text x="84" y="270" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9.5" font-weight="700" fill="#0a3880">STARTER</text>
+  <text x="84" y="291" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="21" font-weight="900" fill="#0a3880">$97</text>
+  <text x="84" y="305" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#5a7a9a">/month</text>
+  <text x="84" y="318" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="8" fill="#5a7a9a">1 Location</text>
+  <rect x="136" y="240" width="92" height="88" rx="11" fill="url(#card2Bg)" filter="url(#cardSh)" stroke="#1de9b6" stroke-width="1.4"/>
+  <rect x="136" y="240" width="92" height="5" rx="2.5" fill="url(#tealG)"/>
+  <rect x="154" y="248" width="56" height="14" rx="7" fill="#00695c" fill-opacity="0.2"/>
+  <text x="182" y="259" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="8" font-weight="700" fill="#00695c">★ POPULAR</text>
+  <text x="182" y="276" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9.5" font-weight="700" fill="#00695c">UNLIMITED</text>
+  <text x="182" y="298" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="21" font-weight="900" fill="#00695c">$297</text>
+  <text x="182" y="312" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#5a8a7a">/month</text>
+  <text x="182" y="322" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="8" fill="#3a7a6a">Agencies</text>
+  <rect x="238" y="248" width="88" height="76" rx="11" fill="url(#card3Bg)" filter="url(#cardSh)"/>
+  <rect x="238" y="248" width="88" height="5" rx="2.5" fill="url(#goldG)"/>
+  <text x="282" y="270" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9.5" font-weight="700" fill="#e65100">SAAS PRO</text>
+  <text x="282" y="291" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="21" font-weight="900" fill="#e65100">$497</text>
+  <text x="282" y="305" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#8a6a2a">/month</text>
+  <text x="282" y="318" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="8" fill="#8a6a2a">White-Label</text>
+  <!-- CTAs -->
+  <rect x="42" y="344" width="144" height="30" rx="10" fill="url(#tealG)"/>
+  <text x="114" y="363" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#ffffff">grow-highlevel.com</text>
+  <rect x="196" y="344" width="136" height="30" rx="10" fill="#e3f2fd" stroke="#1565c0" stroke-width="1"/>
+  <text x="264" y="363" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="700" fill="#0a3880">Book Free Call</text>
+  <text x="42" y="392" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#a0b4c8">grow-highlevel.com · GoHighLevel White Label Pricing Complete Guide 2026</text>
+  <!-- Right card -->
+  <rect x="350" y="76" width="232" height="306" rx="16" fill="#ffffff" filter="url(#softSh)"/>
+  <rect x="350" y="76" width="232" height="42" rx="16" fill="url(#blueG)"/>
+  <rect x="350" y="100" width="232" height="18" fill="url(#blueG)"/>
+  <text x="466" y="99" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="700" fill="#ffffff">SaaS Profit Calculator</text>
+  <text x="466" y="113" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#b3d4f8">White Label Revenue Model</text>
+  <text x="364" y="138" font-family="'Segoe UI',Arial,sans-serif" font-size="9.5" font-weight="700" fill="#0a3880">Your Cost:</text>
+  <rect x="362" y="144" width="206" height="22" rx="6" fill="#fce4e4"/>
+  <text x="374" y="159" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#0d2240">GHL SaaS Pro Plan</text>
+  <text x="560" y="159" text-anchor="end" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="#c62828">- $497/mo</text>
+  <text x="364" y="182" font-family="'Segoe UI',Arial,sans-serif" font-size="9.5" font-weight="700" fill="#00695c">Client Revenue:</text>
+  <rect x="362" y="188" width="206" height="22" rx="6" fill="#e0f7f4"/>
+  <text x="374" y="203" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#0d2240">5 clients × $197/mo</text>
+  <text x="560" y="203" text-anchor="end" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="#00695c">+ $985/mo</text>
+  <rect x="362" y="216" width="206" height="22" rx="6" fill="#f0f8ff"/>
+  <text x="374" y="231" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#0d2240">10 clients × $197/mo</text>
+  <text x="560" y="231" text-anchor="end" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="#00695c">+ $1,970/mo</text>
+  <rect x="362" y="244" width="206" height="22" rx="6" fill="#e0f7f4"/>
+  <text x="374" y="259" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#0d2240">20 clients × $197/mo</text>
+  <text x="560" y="259" text-anchor="end" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="#00695c">+ $3,940/mo</text>
+  <text x="364" y="282" font-family="'Segoe UI',Arial,sans-serif" font-size="9.5" font-weight="700" fill="#0a3880">Net Monthly Profit (20 clients):</text>
+  <rect x="362" y="288" width="206" height="24" rx="7" fill="#e0f7f4" stroke="#1de9b6" stroke-width="1"/>
+  <text x="374" y="304" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="600" fill="#0d2240">After GHL cost deducted</text>
+  <text x="560" y="304" text-anchor="end" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="900" fill="#00695c">$3,443</text>
+  <rect x="362" y="320" width="206" height="30" rx="10" fill="url(#tealG)"/>
+  <text x="465" y="337" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="700" fill="#ffffff">Scale to $10k–$20k/mo</text>
+  <text x="465" y="349" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#cdfaf0">with 50–100 sub-accounts</text>
+  <rect x="378" y="62" width="128" height="20" rx="10" fill="#e1f5ee" stroke="#1de9b6" stroke-width="0.8"/>
+  <circle cx="392" cy="72" r="5" fill="#00897b"/>
+  <circle cx="392" cy="72" r="2.5" fill="#ffffff"/>
+  <text x="448" y="76" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9.5" font-weight="700" fill="#00695c">Recurring SaaS Income</text>
+</svg>

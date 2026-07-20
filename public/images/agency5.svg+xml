@@ -1,0 +1,148 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pageBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8f9ff"/>
+      <stop offset="50%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fffef0"/>
+    </linearGradient>
+    <linearGradient id="navyG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1b4b"/>
+      <stop offset="100%" stop-color="#1a2f7a"/>
+    </linearGradient>
+    <linearGradient id="goldG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#b8860b"/>
+      <stop offset="100%" stop-color="#ffd700"/>
+    </linearGradient>
+    <linearGradient id="accentBar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0d1b4b"/>
+      <stop offset="45%" stop-color="#1a2f7a"/>
+      <stop offset="100%" stop-color="#ffd700"/>
+    </linearGradient>
+    <linearGradient id="cardBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f5f7ff"/>
+    </linearGradient>
+    <filter id="softSh">
+      <feDropShadow dx="0" dy="5" stdDeviation="14" flood-color="#0d1b4b" flood-opacity="0.13"/>
+    </filter>
+    <filter id="cardSh">
+      <feDropShadow dx="0" dy="2" stdDeviation="7" flood-color="#0d1b4b" flood-opacity="0.09"/>
+    </filter>
+    <filter id="glowN">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#1a2f7a" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="400" fill="url(#pageBg)"/>
+
+  <!-- Gold blob top right -->
+  <ellipse cx="518" cy="56" rx="136" ry="88" fill="#fff9e0" opacity="0.6"/>
+  <ellipse cx="518" cy="56" rx="82" ry="52" fill="#fff3b0" opacity="0.45"/>
+  <!-- Navy blob bottom left -->
+  <ellipse cx="82" cy="350" rx="110" ry="72" fill="#e8eaf6" opacity="0.5"/>
+  <ellipse cx="82" cy="350" rx="62" ry="42" fill="#c5cae9" opacity="0.4"/>
+
+  <!-- Handshake / partner icon (abstract) -->
+  <text x="455" y="310" font-family="Arial,sans-serif" font-size="80" fill="#fff3b0" opacity="0.55">🤝</text>
+
+  <!-- Floating accent shapes -->
+  <rect x="466" y="22" width="16" height="16" rx="4" fill="#1a2f7a" fill-opacity="0.13" transform="rotate(22,474,30)"/>
+  <rect x="504" y="44" width="11" height="11" rx="3" fill="#ffd700" fill-opacity="0.22" transform="rotate(-14,510,50)"/>
+  <circle cx="552" cy="26" r="6" fill="#ffd700" fill-opacity="0.28"/>
+  <circle cx="540" cy="88" r="4" fill="#1a2f7a" fill-opacity="0.2"/>
+  <circle cx="486" cy="96" r="3" fill="#ffd700" fill-opacity="0.22"/>
+  <rect x="14" y="238" width="13" height="13" rx="3" fill="#0d1b4b" fill-opacity="0.10" transform="rotate(18,20,244)"/>
+  <circle cx="30" cy="298" r="5" fill="#ffd700" fill-opacity="0.2"/>
+  <circle cx="12" cy="344" r="4" fill="#1a2f7a" fill-opacity="0.14"/>
+
+  <!-- ===== LEFT CONTENT ===== -->
+  <!-- Badge -->
+  <rect x="42" y="26" width="232" height="27" rx="13.5" fill="url(#navyG)" filter="url(#glowN)"/>
+  <text x="158" y="43" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="700" fill="#ffd700" letter-spacing="0.8">🤝 PARTNER GUIDE 2026</text>
+
+  <!-- Main headline -->
+  <text x="42" y="102" font-family="'Segoe UI',Arial,sans-serif" font-size="28" font-weight="900" fill="#0d1b4b">How to Become a</text>
+  <text x="42" y="137" font-family="'Segoe UI',Arial,sans-serif" font-size="30" font-weight="800" fill="#1a2f7a">GoHighLevel</text>
+  <text x="42" y="170" font-family="'Segoe UI',Arial,sans-serif" font-size="28" font-weight="800" fill="#b8860b">Partner</text>
+
+  <!-- Accent bar -->
+  <rect x="42" y="180" width="292" height="5" rx="2.5" fill="url(#accentBar)"/>
+
+  <!-- Subtitle -->
+  <text x="42" y="205" font-family="'Segoe UI',Arial,sans-serif" font-size="12" fill="#4a5070">Affiliate Program, SaaS Reselling &amp;</text>
+  <text x="42" y="223" font-family="'Segoe UI',Arial,sans-serif" font-size="12" fill="#4a5070">Agency Partnership — Complete 2026 Guide</text>
+
+  <!-- Benefit pills -->
+  <rect x="42" y="242" width="96" height="24" rx="12" fill="#f0f2ff" stroke="#1a2f7a" stroke-width="0.8"/>
+  <text x="90" y="258" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9.5" font-weight="600" fill="#0d1b4b">40% Recurring</text>
+  <rect x="148" y="242" width="80" height="24" rx="12" fill="#fff9e0" stroke="#b8860b" stroke-width="0.8"/>
+  <text x="188" y="258" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9.5" font-weight="600" fill="#7a5800">White-Label</text>
+  <rect x="238" y="242" width="88" height="24" rx="12" fill="#f0f2ff" stroke="#1a2f7a" stroke-width="0.8"/>
+  <text x="282" y="258" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9.5" font-weight="600" fill="#0d1b4b">$497/mo Plan</text>
+
+  <!-- Stat cards -->
+  <rect x="42" y="280" width="84" height="52" rx="12" fill="#ffffff" filter="url(#cardSh)"/>
+  <rect x="42" y="280" width="84" height="4" rx="2" fill="url(#navyG)"/>
+  <text x="84" y="305" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="18" font-weight="900" fill="#0d1b4b">40%</text>
+  <text x="84" y="323" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#888aaa">Commission</text>
+
+  <rect x="138" y="280" width="84" height="52" rx="12" fill="#ffffff" filter="url(#cardSh)"/>
+  <rect x="138" y="280" width="84" height="4" rx="2" fill="url(#goldG)"/>
+  <text x="180" y="305" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="18" font-weight="900" fill="#7a5800">$5k+</text>
+  <text x="180" y="323" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#888aaa">Avg/month</text>
+
+  <rect x="234" y="280" width="84" height="52" rx="12" fill="#ffffff" filter="url(#cardSh)"/>
+  <rect x="234" y="280" width="84" height="4" rx="2" fill="url(#navyG)"/>
+  <text x="276" y="305" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="18" font-weight="900" fill="#0d1b4b">USA</text>
+  <text x="276" y="323" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#888aaa">Market Focus</text>
+
+  <!-- CTAs -->
+  <rect x="42" y="348" width="148" height="30" rx="15" fill="url(#navyG)"/>
+  <text x="116" y="367" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11.5" font-weight="700" fill="#ffd700">grow-highlevel.com</text>
+  <rect x="200" y="348" width="120" height="30" rx="15" fill="#ffffff" stroke="#1a2f7a" stroke-width="1.2"/>
+  <text x="260" y="367" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="700" fill="#0d1b4b">Join Now →</text>
+
+  <text x="42" y="394" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#aaaaaa">grow-highlevel.com · How to Become a GoHighLevel Partner 2026</text>
+
+  <!-- ===== RIGHT: Partner card ===== -->
+  <rect x="356" y="60" width="228" height="322" rx="20" fill="url(#cardBg)" filter="url(#softSh)"/>
+  <rect x="356" y="60" width="228" height="8" rx="6" fill="url(#accentBar)"/>
+
+  <!-- Card header -->
+  <rect x="372" y="78" width="196" height="36" rx="10" fill="#f0f2ff"/>
+  <text x="470" y="93" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="#0d1b4b">🤝 Partnership Options</text>
+  <text x="470" y="107" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#7a8aaa">Choose your path to income</text>
+
+  <!-- Option rows -->
+  <rect x="372" y="122" width="196" height="44" rx="8" fill="#f8f9ff" stroke="#c5cae9" stroke-width="1"/>
+  <rect x="372" y="122" width="5" height="44" rx="3" fill="#1a2f7a"/>
+  <text x="387" y="138" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="#0d1b4b">Affiliate Partner</text>
+  <text x="387" y="152" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#5a6070">40% recurring commission</text>
+  <text x="387" y="162" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#5a6070">Free to join — no products needed</text>
+
+  <rect x="372" y="172" width="196" height="44" rx="8" fill="#fff9e0" stroke="#ffe082" stroke-width="1"/>
+  <rect x="372" y="172" width="5" height="44" rx="3" fill="#ffd700"/>
+  <text x="387" y="188" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="#7a5800">SaaS Partner</text>
+  <text x="387" y="202" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#5a6070">White-label + resell GHL</text>
+  <text x="387" y="212" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#5a6070">$497/mo · Build SaaS income</text>
+
+  <rect x="372" y="222" width="196" height="44" rx="8" fill="#f8f9ff" stroke="#c5cae9" stroke-width="1"/>
+  <rect x="372" y="222" width="5" height="44" rx="3" fill="#0d1b4b"/>
+  <text x="387" y="238" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="#0d1b4b">Agency Partner</text>
+  <text x="387" y="252" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#5a6070">Setup + deliver GHL for clients</text>
+  <text x="387" y="262" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#5a6070">$297/mo Unlimited plan</text>
+
+  <rect x="372" y="272" width="196" height="44" rx="8" fill="#fff9e0" stroke="#ffe082" stroke-width="1"/>
+  <rect x="372" y="272" width="5" height="44" rx="3" fill="#b8860b"/>
+  <text x="387" y="288" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="#7a5800">Certified Expert</text>
+  <text x="387" y="302" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#5a6070">Listed in GHL marketplace</text>
+  <text x="387" y="312" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#5a6070">Inbound client referrals</text>
+
+  <!-- CTA inside card -->
+  <rect x="372" y="326" width="196" height="28" rx="14" fill="url(#navyG)"/>
+  <text x="470" y="344" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10.5" font-weight="700" fill="#ffd700">Start Your Partner Journey</text>
+
+  <!-- USA badge -->
+  <rect x="490" y="46" width="80" height="20" rx="10" fill="#f0f2ff" stroke="#1a2f7a" stroke-width="0.8"/>
+  <text x="530" y="60" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="9" font-weight="700" fill="#0d1b4b">🇺🇸 US Agencies</text>
+</svg>
