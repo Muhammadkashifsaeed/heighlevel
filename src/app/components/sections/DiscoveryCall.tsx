@@ -181,7 +181,10 @@ export default function DiscoveryCall() {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="mt-4 text-4xl font-extrabold leading-tight tracking-tight text-[#111111] sm:text-5xl md:text-[48px]"
           >
-            Let&apos;s Build Your Growth Engine
+            Let&apos;s Build Your{" "}
+            <span className="bg-[linear-gradient(90deg,#22c55e,#3b82f6)] bg-clip-text text-transparent">
+              Growth Engine
+            </span>
           </motion.h2>
 
           {/* Subtext */}
