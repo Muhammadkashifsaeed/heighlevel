@@ -176,7 +176,7 @@ export default function Footer() {
             </a>
             <p className="flex items-center gap-2 text-sm text-slate-400">
               <Clock className="h-4 w-4 shrink-0" />
-              Mon–Fri | 9am–6pm EST / GMT
+               Mon–Fri | 3:00 PM - 12:00 AM (PKT)
             </p>
             <Link
               href="/contact"
