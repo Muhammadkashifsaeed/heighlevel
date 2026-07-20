@@ -18,7 +18,7 @@ export default function ServicesPage() {
           With Expert Systems
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-slate-300">
-          At Grow HighLevel, we help agencies, coaches, consultants, SaaS
+          At DigiStartup, we help agencies, coaches, consultants, SaaS
           companies, and local businesses leverage the full power of automation
           and modern marketing systems. We don&apos;t just implement tools. We
           build growth systems.

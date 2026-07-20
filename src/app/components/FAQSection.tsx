@@ -5,8 +5,8 @@ import { ChevronDown } from "lucide-react";
 
 const faqs = [
   {
-    q: "What services does Grow HighLevel provide?",
-    a: "Grow HighLevel provides complete GoHighLevel CRM setup, AI automation, N8N workflow development, conversion-focused funnel building, and dedicated GoHighLevel Virtual Assistants (VAs) for agencies, coaches, and SaaS companies.",
+    q: "What services does DigiStartup provide?",
+    a: "DigiStartup provides complete GoHighLevel CRM setup, AI automation, N8N workflow development, conversion-focused funnel building, and dedicated GoHighLevel Virtual Assistants (VAs) for agencies, coaches, and SaaS companies.",
   },
   {
     q: "Can I hire a dedicated GoHighLevel Virtual Assistant?",

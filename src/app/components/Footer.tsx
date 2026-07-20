@@ -72,7 +72,7 @@ export default function Footer() {
           </h2>
           <p className="max-w-2xl text-base leading-7 text-slate-300">
             Stop wasting time on broken systems and underqualified help. As your
-            trusted partner, Grow HighLevel is the team that builds, automates,
+            trusted partner, DigiStartup is the team that builds, automates,
             and scales your business the right way — starting today.
           </p>
           <Link
@@ -111,7 +111,7 @@ export default function Footer() {
             <Link href="/" className="flex items-center">
               <Image
                 src="/images/logo1.png"
-                alt="Grow HighLevel"
+                alt="DigiStartup"
                 width={150}
                 height={44}
                 className="h-10 w-auto"
@@ -193,7 +193,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-6 py-6 text-center text-sm text-slate-400 sm:flex-row sm:justify-between sm:text-left">
           <span>
-            © 2026 Grow HighLevel. All Rights Reserved. AI Automation &amp; CRM
+            © 2026 DigiStartup. All Rights Reserved. AI Automation &amp; CRM
             Experts.
           </span>
           <div className="flex items-center gap-3">

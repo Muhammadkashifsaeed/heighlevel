@@ -16,7 +16,7 @@ export default function MeetTheCeoPage() {
           </span>
         </h1>
         <p className="mt-6 max-w-2xl text-base leading-7 text-slate-600">
-          Our CEO founded Grow HighLevel with one mission: to give agency owners
+          Our CEO founded DigiStartup with one mission: to give agency owners
           the fulfillment team they actually need — not just another vendor.
         </p>
         <div className="mt-10">

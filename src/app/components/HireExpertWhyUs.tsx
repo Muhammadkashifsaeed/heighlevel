@@ -67,7 +67,7 @@ export default function HireExpertWhyUs() {
             transition={{ duration: 0.7 }}
             className="text-4xl font-extrabold leading-tight tracking-tight text-[#0F172A] sm:text-5xl md:text-6xl"
           >
-            What Makes a Grow HighLevel
+            What Makes a DigiStartup
             <br />
             <span className="bg-[linear-gradient(90deg,#22c55e,#34d399,#3b82f6)] bg-clip-text text-transparent drop-shadow-[0_0_25px_rgba(34,197,94,0.25)]">
               Expert Different?

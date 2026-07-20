@@ -155,7 +155,7 @@ export default function WhyChooseUs() {
 
                 <div className="flex-1">
                   <div className="flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-4 py-2.5 backdrop-blur-md">
-                    <p className="text-sm font-semibold text-white">GrowHighLevel</p>
+                    <p className="text-sm font-semibold text-white">DigiStartup</p>
                     <span className="flex items-center gap-1.5 text-[10px] font-semibold text-green-400">
                       <span className="h-1.5 w-1.5 animate-ping rounded-full bg-green-400" />
                       LIVE
