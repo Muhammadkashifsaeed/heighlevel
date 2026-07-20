@@ -106,7 +106,7 @@ export default function HeroSection() {
             className="flex flex-col items-center gap-6 text-center"
           >
             <span className="rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2 text-xs font-bold uppercase tracking-widest bg-[linear-gradient(90deg,#22c55e,#06b6d4)] bg-clip-text text-transparent">
-              Scale Your HighLevel
+              Scale Your DigiStartup
             </span>
             <h1 className="text-4xl font-bold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
               Stop Building Alone.{" "}
@@ -117,7 +117,7 @@ export default function HeroSection() {
             </h1>
             <p className="max-w-2xl text-base leading-7 text-slate-600">
               Your agency grows when your fulfillment actually works. We handle
-              the full GoHighLevel build — CRM setup, pipeline management,
+              the full GoDigiStartup build — CRM setup, pipeline management,
               automations, workflows, funnels, AI chatbots, Facebook Ads, Google
               Ads, Klaviyo, ActiveCampaign, and end-to-end tech support so you
               scale without the stress.

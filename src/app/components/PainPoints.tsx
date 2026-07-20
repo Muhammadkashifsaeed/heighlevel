@@ -12,7 +12,7 @@ export default function PainPoints() {
             <span className="text-blue-600">the Table Every Single Day.</span>
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-slate-600">
-            You bought GoHighLevel. You have leads. You have a vision. But
+            You bought GoDigiStartup. You have leads. You have a vision. But
             somewhere between &quot;setting it up&quot; and &quot;scaling it
             up&quot; — everything stalled.
           </p>

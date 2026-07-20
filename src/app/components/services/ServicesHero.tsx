@@ -13,7 +13,7 @@ export default function ServicesPage() {
         <h1 className="mt-6 text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl">
           Grow Your{" "}
           <span className="text-blue-400">
-            HighLevel
+            DigiStartup
           </span>{" "}
           With Expert Systems
         </h1>

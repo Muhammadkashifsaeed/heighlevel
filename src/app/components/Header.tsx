@@ -11,7 +11,7 @@ const navLinks = [
   { label: "Services", href: "/services" },
   { label: "Grow SaaS", href: "/grow-saas" },
   { label: "Portfolio", href: "/portfolio" },
-  { label: "Hire GoHighLevel Expert", href: "/hire-expert" },
+  { label: "Hire GoDigiStartup Expert", href: "/hire-expert" },
   { label: "Testimonials", href: "/testimonials" },
   { label: "Blogs", href: "/blogs" },
   { label: "Contact", href: "/contact" },

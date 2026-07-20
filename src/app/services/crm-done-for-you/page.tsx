@@ -16,7 +16,7 @@ export default function CRMDoneForYouPage() {
           </span>
         </h1>
         <p className="mt-6 max-w-2xl text-base leading-7 text-slate-600">
-          We handle your complete GoHighLevel CRM setup, pipeline builds,
+          We handle your complete GoDigiStartup CRM setup, pipeline builds,
           automation workflows, snapshot builds, AI integration, and
           sub-account management so you don&apos;t have to.
         </p>

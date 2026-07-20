@@ -15,7 +15,7 @@ export default function WhiteLabelPage() {
           </span>
         </h1>
         <p className="mt-6 max-w-2xl text-base leading-7 text-slate-600">
-          We work under your GoHighLevel agency brand so your clients get
+          We work under your GoDigiStartup agency brand so your clients get
           expert-level service without you lifting a finger.
         </p>
         <div className="mt-10">

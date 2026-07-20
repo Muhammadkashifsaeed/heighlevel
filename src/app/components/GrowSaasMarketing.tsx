@@ -128,7 +128,7 @@ export default function GrowSaasMarketing() {
           The Engine to
           <br />
           <span className="bg-[linear-gradient(90deg,#22c55e,#34d399)] bg-clip-text text-transparent drop-shadow-[0_0_25px_rgba(34,197,94,0.25)]">
-            Scale Your HighLevel
+            Scale Your DigiStartup
           </span>
         </motion.h2>
 

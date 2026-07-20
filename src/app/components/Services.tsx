@@ -13,7 +13,7 @@ const cards = [
   {
     Icon: Rocket,
     accent: "bg-green-100 text-green-600",
-    title: "GoHighLevel Done-For-You",
+    title: "GoDigiStartup Done-For-You",
     body: "Full CRM setup, pipeline builds, Gohighlevel automation workflows, snapshot builds, AI integration, and sub-account management.",
   },
   {

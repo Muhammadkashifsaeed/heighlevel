@@ -5,10 +5,10 @@ import { Settings, Check, ArrowRight } from "lucide-react";
 
 const services = [
   {
-    title: "GoHighLevel CRM Setup & Management",
+    title: "GoDigiStartup CRM Setup & Management",
     subheading: "Done-For-You GHL Implementation by Certified Experts",
     description:
-      "GoHighLevel is one of the most powerful CRM and marketing automation platforms available today, but most businesses only use a fraction of its capabilities. Our experts build, optimize, and manage complete CRM systems that help businesses automate lead generation, sales, marketing, customer communication, and onboarding.",
+      "GoDigiStartup is one of the most powerful CRM and marketing automation platforms available today, but most businesses only use a fraction of its capabilities. Our experts build, optimize, and manage complete CRM systems that help businesses automate lead generation, sales, marketing, customer communication, and onboarding.",
     features: [
       "Complete CRM Account Setup",
       "SaaS Mode & White Label Config",

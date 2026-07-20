@@ -169,7 +169,7 @@ export default function GrowSaasHero() {
         >
           Grow Your{" "}
           <span className="bg-[linear-gradient(90deg,#22c55e,#06b6d4,#3b82f6,#eab308)] bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(34,197,94,0.3)]">
-            HighLevel
+            DigiStartup
           </span>
           <br className="hidden sm:block" />
           SaaS Business
