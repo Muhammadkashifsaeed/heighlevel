@@ -3,6 +3,7 @@ import GrowSaasFeatures from "../components/GrowSaasFeatures";
 import GrowSaasProblems from "../components/GrowSaasProblems";
 import GrowSaasClients from "../components/GrowSaasClients";
 import GrowSaasMarketing from "../components/GrowSaasMarketing";
+import GrowSaasSolution from "../components/GrowSaasSolution";
 import Footer from "../components/Footer";
 
 export default function GrowSaaSPage() {
@@ -13,6 +14,7 @@ export default function GrowSaaSPage() {
       <GrowSaasProblems />
       <GrowSaasClients />
       <GrowSaasMarketing />
+      <GrowSaasSolution />
       <Footer />
     </>
   );
