@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import {
   Mail,
   Phone,
@@ -11,7 +11,8 @@ import {
   Globe,
   Star,
   ChevronDown,
-  ChevronUp,
+  ChevronLeft,
+  ChevronRight,
 } from "lucide-react";
 
 const faqs = [
@@ -30,20 +31,91 @@ const faqs = [
 ];
 
 const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-const timeSlots = [
-  "9:00 AM",
-  "10:00 AM",
-  "11:00 AM",
-  "12:00 PM",
-  "1:00 PM",
-  "2:00 PM",
-  "3:00 PM",
-  "4:00 PM",
-  "5:00 PM",
+const months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+
+const timeZones = [
+  "GMT+05:00 Asia/Multan (GMT+5)",
+  "GMT+04:00 Asia/Dubai (GMT+4)",
+  "GMT+03:00 Asia/Riyadh (GMT+3)",
+  "GMT+00:00 Europe/London (GMT+0)",
+  "GMT-04:00 America/New_York (GMT-4)",
+  "GMT-07:00 America/Los_Angeles (GMT-7)",
+  "GMT+08:00 Asia/Singapore (GMT+8)",
 ];
 
 export default function DiscoveryCall() {
+  const today = useMemo(() => {
+    const d = new Date(2026, 6, 20);
+    return d;
+  }, []);
+
+  const [currentMonth, setCurrentMonth] = useState(today.getMonth());
+  const [currentYear, setCurrentYear] = useState(today.getFullYear());
+  const [selectedDate, setSelectedDate] = useState<number | null>(20);
+  const [selectedDay, setSelectedDay] = useState<string | null>(null);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [tzOpen, setTzOpen] = useState(false);
+  const [timeZone, setTimeZone] = useState(timeZones[0]);
+
+  const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
+  const firstDay = new Date(currentYear, currentMonth, 1).getDay();
+
+  const prevMonth = () => {
+    if (currentMonth === 0) {
+      setCurrentMonth(11);
+      setCurrentYear(currentYear - 1);
+    } else {
+      setCurrentMonth(currentMonth - 1);
+    }
+  };
+
+  const nextMonth = () => {
+    if (currentMonth === 11) {
+      setCurrentMonth(0);
+      setCurrentYear(currentYear + 1);
+    } else {
+      setCurrentMonth(currentMonth + 1);
+    }
+  };
+
+  const handleDayClick = (dayNum: number) => {
+    setSelectedDate(dayNum);
+    const d = new Date(currentYear, currentMonth, dayNum);
+    const dayName = days[d.getDay()];
+    setSelectedDay(dayName === selectedDay ? null : dayName);
+  };
+
+  const handleDayHeaderClick = (dayName: string) => {
+    setSelectedDay(dayName === selectedDay ? null : dayName);
+  };
+
+  const filteredDays = useMemo(() => {
+    const cells: (number | null)[] = [];
+    for (let i = 0; i < firstDay; i++) cells.push(null);
+    for (let d = 1; d <= daysInMonth; d++) {
+      const dateObj = new Date(currentYear, currentMonth, d);
+      const dayName = days[dateObj.getDay()];
+      if (selectedDay === null || dayName === selectedDay) {
+        cells.push(d);
+      } else {
+        cells.push(null);
+      }
+    }
+    return cells;
+  }, [firstDay, daysInMonth, currentMonth, currentYear, selectedDay]);
 
   return (
     <section className="bg-white py-20 sm:py-24">
@@ -165,21 +237,21 @@ export default function DiscoveryCall() {
               <div className="mt-6 flex gap-4">
                 <a
                   href="#"
-                  className="flex h-12 w-12 items-center justify-center rounded-2xl border border-slate-200 bg-slate-50 text-slate-600 transition-all duration-300 hover:border-blue-500 hover:bg-blue-50 hover:text-blue-600"
+                  className="flex h-12 w-12 items-center justify-center rounded-2xl border border-slate-200 bg-slate-50 text-slate-600 transition-all duration-300 hover:border-blue-600 hover:bg-blue-50 hover:text-blue-700"
                 >
-                  <span className="text-xs font-bold">FB</span>
+                  <span className="text-xs font-black">FB</span>
                 </a>
                 <a
                   href="#"
                   className="flex h-12 w-12 items-center justify-center rounded-2xl border border-slate-200 bg-slate-50 text-slate-600 transition-all duration-300 hover:border-pink-500 hover:bg-pink-50 hover:text-pink-600"
                 >
-                  <span className="text-xs font-bold">IG</span>
+                  <span className="text-xs font-black">IG</span>
                 </a>
                 <a
                   href="#"
-                  className="flex h-12 w-12 items-center justify-center rounded-2xl border border-slate-200 bg-slate-50 text-slate-600 transition-all duration-300 hover:border-blue-700 hover:bg-blue-50 hover:text-blue-700"
+                  className="flex h-12 w-12 items-center justify-center rounded-2xl border border-slate-200 bg-slate-50 text-slate-600 transition-all duration-300 hover:border-blue-700 hover:bg-blue-50 hover:text-blue-800"
                 >
-                  <span className="text-xs font-bold">LN</span>
+                  <span className="text-xs font-black">LN</span>
                 </a>
               </div>
             </motion.div>
@@ -244,7 +316,7 @@ export default function DiscoveryCall() {
                         {faq.q}
                       </span>
                       {openFaq === i ? (
-                        <ChevronUp className="h-5 w-5 shrink-0 text-emerald-600" />
+                        <ChevronDown className="h-5 w-5 shrink-0 text-emerald-600" />
                       ) : (
                         <ChevronDown className="h-5 w-5 shrink-0 text-slate-400" />
                       )}
@@ -295,101 +367,124 @@ export default function DiscoveryCall() {
                 <h3 className="mt-4 text-xl font-extrabold text-[#111111]">
                   JustTap.io Free Strategy Call
                 </h3>
-              </div>
 
-              {/* Call Details */}
-              <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
-                <div className="flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-medium text-[#111111]">
-                  <Clock className="h-4 w-4 text-emerald-600" />
-                  30 min
-                </div>
-                <div className="flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-medium text-[#111111]">
-                  <span className="h-4 w-4 rounded-full bg-blue-100 text-center text-xs leading-4 text-blue-600">
-                    M
-                  </span>
-                  Mon, July 20, 2026
-                </div>
-                <div className="flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-medium text-[#111111]">
-                  <MapPin className="h-4 w-4 text-yellow-600" />
-                  Asia/Multan (GMT+5)
+                {/* Call Details */}
+                <div className="mt-4 flex flex-wrap items-center justify-center gap-3">
+                  <div className="flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-medium text-[#111111]">
+                    <Clock className="h-4 w-4 text-emerald-600" />
+                    30 min
+                  </div>
+                  <div className="flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-medium text-[#111111]">
+                    <span className="h-4 w-4 rounded-full bg-blue-100 text-center text-xs leading-4 text-blue-600">
+                      M
+                    </span>
+                    {months[currentMonth]} {currentYear}
+                  </div>
                 </div>
               </div>
 
-              {/* Calendar */}
+              {/* Calendar Navigation */}
               <div className="mt-6">
-                {/* Days of week header */}
-                <div className="grid grid-cols-7 gap-2">
+                {/* Month/Year Navigation */}
+                <div className="flex items-center justify-between">
+                  <button
+                    onClick={prevMonth}
+                    className="flex h-8 w-8 items-center justify-center rounded-full border border-slate-200 text-slate-600 transition-all duration-200 hover:border-emerald-400 hover:text-emerald-600"
+                  >
+                    <ChevronLeft className="h-4 w-4" />
+                  </button>
+                  <span className="text-sm font-bold text-[#111111]">
+                    {months[currentMonth]} {currentYear}
+                  </span>
+                  <button
+                    onClick={nextMonth}
+                    className="flex h-8 w-8 items-center justify-center rounded-full border border-slate-200 text-slate-600 transition-all duration-200 hover:border-emerald-400 hover:text-emerald-600"
+                  >
+                    <ChevronRight className="h-4 w-4" />
+                  </button>
+                </div>
+
+                {/* Days of week header - clickable */}
+                <div className="mt-3 grid grid-cols-7 gap-1">
                   {days.map((day) => (
-                    <div
+                    <button
                       key={day}
-                      className="py-2 text-center text-xs font-semibold uppercase tracking-wider text-[#6B7280]"
+                      onClick={() => handleDayHeaderClick(day)}
+                      className={`py-2 text-center text-xs font-bold uppercase tracking-wider transition-all duration-200 rounded-lg ${
+                        selectedDay === day
+                          ? "bg-[#22D3A6] text-white"
+                          : "text-[#6B7280] hover:bg-slate-100"
+                      }`}
                     >
                       {day}
-                    </div>
+                    </button>
                   ))}
                 </div>
 
-                {/* Calendar grid placeholder */}
-                <div className="mt-2 grid grid-cols-7 gap-2">
-                  {Array.from({ length: 35 }).map((_, i) => {
-                    const dayNum = i - 2;
-                    const isCurrentMonth = dayNum > 0 && dayNum <= 31;
-                    const isSelected = dayNum === 20;
-                    const isDisabled = !isCurrentMonth;
-
-                    return (
-                      <button
-                        key={i}
-                        disabled={isDisabled}
-                        className={`flex h-10 w-full items-center justify-center rounded-xl text-sm font-medium transition-all duration-200 ${
-                          isSelected
-                            ? "bg-[#22D3A6] text-white shadow-lg"
-                            : isCurrentMonth
-                            ? "bg-slate-50 text-[#111111] hover:bg-emerald-50 hover:text-emerald-600"
-                            : "text-slate-300"
-                        }`}
-                      >
-                        {isCurrentMonth ? dayNum : ""}
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-
-              {/* Time Slots */}
-              <div className="mt-6">
-                <h4 className="text-sm font-semibold uppercase tracking-wider text-[#6B7280]">
-                  Available Times
-                </h4>
-                <div className="mt-3 grid grid-cols-3 gap-2">
-                  {timeSlots.map((time) => (
+                {/* Calendar grid */}
+                <div className="mt-2 grid grid-cols-7 gap-1">
+                  {filteredDays.map((dayNum, i) => (
                     <button
-                      key={time}
-                      className="rounded-xl border border-slate-200 bg-slate-50 py-2.5 text-sm font-medium text-[#111111] transition-all duration-200 hover:border-emerald-400 hover:bg-emerald-50 hover:text-emerald-600"
+                      key={i}
+                      disabled={dayNum === null}
+                      onClick={() => dayNum && handleDayClick(dayNum)}
+                      className={`flex h-10 w-full items-center justify-center rounded-xl text-sm font-medium transition-all duration-200 ${
+                        dayNum === null
+                          ? "invisible"
+                          : selectedDate === dayNum
+                          ? "bg-[#22D3A6] text-white shadow-lg"
+                          : "bg-slate-50 text-[#111111] hover:bg-emerald-50 hover:text-emerald-600"
+                      }`}
                     >
-                      {time}
+                      {dayNum}
                     </button>
                   ))}
                 </div>
               </div>
 
-              {/* Time Zone */}
-              <div className="mt-6">
+              {/* Time Zone Selector */}
+              <div className="mt-6 relative">
                 <h4 className="text-sm font-semibold uppercase tracking-wider text-[#6B7280]">
                   Time Zone
                 </h4>
-                <div className="mt-2 flex items-center gap-2 rounded-xl border border-slate-200 bg-slate-50 px-4 py-3">
-                  <Clock className="h-4 w-4 text-emerald-600" />
-                  <span className="text-sm font-medium text-[#111111]">
-                    GMT+05:00 Asia/Multan (GMT+5)
-                  </span>
-                </div>
-              </div>
+                <button
+                  onClick={() => setTzOpen(!tzOpen)}
+                  className="mt-2 flex w-full items-center justify-between rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium text-[#111111] transition-all duration-200 hover:border-emerald-400"
+                >
+                  <div className="flex items-center gap-2">
+                    <Globe className="h-4 w-4 text-emerald-600" />
+                    {timeZone}
+                  </div>
+                  <ChevronDown
+                    className={`h-4 w-4 text-slate-400 transition-transform duration-200 ${
+                      tzOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
 
-              {/* Confirm Button */}
-              <button className="mt-6 w-full rounded-full bg-[linear-gradient(135deg,#22c55e,#06b6d4,#3b82f6)] py-3.5 text-base font-semibold text-white shadow-[0_0_40px_rgba(34,197,94,0.3)] transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_60px_rgba(34,197,94,0.5)]">
-                Confirm Booking
-              </button>
+                {/* Time Zone Dropdown */}
+                {tzOpen && (
+                  <div className="absolute z-20 mt-1 w-full rounded-xl border border-slate-200 bg-white shadow-xl">
+                    {timeZones.map((tz) => (
+                      <button
+                        key={tz}
+                        onClick={() => {
+                          setTimeZone(tz);
+                          setTzOpen(false);
+                        }}
+                        className={`flex w-full items-center gap-2 px-4 py-2.5 text-left text-sm transition-colors duration-200 hover:bg-emerald-50 ${
+                          timeZone === tz
+                            ? "bg-emerald-50 text-emerald-600 font-semibold"
+                            : "text-[#111111]"
+                        }`}
+                      >
+                        <Globe className="h-4 w-4 shrink-0 text-slate-400" />
+                        {tz}
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
             </div>
           </motion.div>
         </div>
