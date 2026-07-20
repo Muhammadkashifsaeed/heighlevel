@@ -403,7 +403,7 @@ export default function DiscoveryCall() {
                 </div>
 
                 <h3 className="mt-4 text-xl font-extrabold text-[#111111]">
-                  JustTap.io Free Strategy Call
+                  Digustratup.io Free Strategy Call
                 </h3>
 
                 {/* Call Details */}
