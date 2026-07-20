@@ -150,7 +150,7 @@ export default function Footer() {
             </h3>
             <ul className="flex flex-col gap-3">
               {company.map((item) => (
-                <li key={item.href}>
+                <li key={item.label}>
                   <Link
                     href={item.href}
                     className="text-sm text-slate-400 transition-colors duration-300 hover:text-[#7cc0f0]"
