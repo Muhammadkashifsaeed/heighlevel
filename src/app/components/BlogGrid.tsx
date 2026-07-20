@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 
 const getImagePath = (idx: number) => {
   if (idx === 8) return "/images/agency8.webp";
-  return `/images/agency${idx}.svg+xml`;
+  return `/images/agency${idx}.svg`;
 };
 
 const blogs = [
