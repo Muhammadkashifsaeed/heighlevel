@@ -293,87 +293,6 @@ export default function DiscoveryCall() {
                 ))}
               </div>
             </motion.div>
-
-            {/* Testimonial Box */}
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7, delay: 0.5 }}
-              className="rounded-3xl bg-[#111111] p-8 text-center shadow-xl"
-            >
-              <div className="flex justify-center gap-1">
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <Star
-                    key={i}
-                    className="h-5 w-5 fill-yellow-400 text-yellow-400"
-                  />
-                ))}
-              </div>
-              <p className="mt-4 text-sm font-bold uppercase tracking-wider text-yellow-400">
-                Trusted by 200+ Agencies
-              </p>
-              <p className="mt-4 text-base leading-relaxed text-neutral-300">
-                &ldquo;Working with the team completely transformed our fulfillment.
-                We scaled from 10 to 40 clients in 3 months without breaking a
-                sweat.&rdquo;
-              </p>
-              <p className="mt-2 text-sm font-semibold text-white">
-                — Sarah J., Agency Owner
-              </p>
-            </motion.div>
-
-            {/* FAQ */}
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7, delay: 0.6 }}
-              className="rounded-3xl border border-slate-200 bg-white p-8 shadow-xl"
-            >
-              <h3 className="text-2xl font-extrabold text-[#111111]">
-                Frequently Asked Questions
-              </h3>
-              <div className="mt-6 space-y-4">
-                {faqs.map((faq, i) => (
-                  <div
-                    key={i}
-                    className="rounded-2xl border border-slate-200 transition-colors duration-300"
-                  >
-                    <button
-                      onClick={() =>
-                        setOpenFaq(openFaq === i ? null : i)
-                      }
-                      className="flex w-full items-center justify-between px-6 py-4 text-left"
-                    >
-                      <span
-                        className={`text-sm font-semibold transition-colors duration-300 ${
-                          openFaq === i ? "text-emerald-600" : "text-[#111111]"
-                        }`}
-                      >
-                        {faq.q}
-                      </span>
-                      {openFaq === i ? (
-                        <ChevronDown className="h-5 w-5 shrink-0 text-emerald-600" />
-                      ) : (
-                        <ChevronDown className="h-5 w-5 shrink-0 text-slate-400" />
-                      )}
-                    </button>
-                    <div
-                      className="overflow-hidden transition-all duration-300 ease-in-out"
-                      style={{
-                        maxHeight: openFaq === i ? "300px" : "0px",
-                        opacity: openFaq === i ? 1 : 0,
-                      }}
-                    >
-                      <p className="px-6 pb-4 text-sm leading-6 text-[#6B7280]">
-                        {faq.a}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
           </div>
 
           {/* RIGHT SIDE - Booking Widget */}
@@ -479,6 +398,23 @@ export default function DiscoveryCall() {
                       }`}
                     >
                       {dayNum}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Time Slots */}
+              <div className="mt-6">
+                <h4 className="text-sm font-semibold uppercase tracking-wider text-[#6B7280]">
+                  Available Times
+                </h4>
+                <div className="mt-3 grid grid-cols-3 gap-2">
+                  {["08:00PM", "08:30PM", "09:00PM", "09:30PM", "10:00PM", "10:30PM", "11:00PM"].map((time) => (
+                    <button
+                      key={time}
+                      className="rounded-xl border border-slate-200 bg-slate-50 py-2.5 text-sm font-medium text-[#111111] transition-all duration-200 hover:border-emerald-400 hover:bg-emerald-50 hover:text-emerald-600"
+                    >
+                      {time}
                     </button>
                   ))}
                 </div>
