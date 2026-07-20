@@ -3,6 +3,11 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
+const getImagePath = (idx: number) => {
+  if (idx === 8) return "/images/agency8.webp";
+  return `/images/agency${idx}.svg+xml`;
+};
+
 const blogs = [
   {
     date: "07/06/2026",
@@ -10,7 +15,7 @@ const blogs = [
     title: "GoHighLevel Login: How to Log In, Fix Issues & Manage...",
     description:
       "Complete GoHighLevel login guide for 2026. Learn how to access your account via web, mobile app, or white-label portal — plus how to...",
-    image: "/images/agency1.svg+xml",
+    image: getImagePath(1),
   },
   {
     date: "05/06/2026",
@@ -18,7 +23,7 @@ const blogs = [
     title: "GoHighLevel API: Complete Guide for Integrations,...",
     description:
       "The GoHighLevel API lets agencies and developers connect GHL to any tool — CRM, Zapier, n8n, or custom code. This 2026 guide...",
-    image: "/images/agency2.svg+xml",
+    image: getImagePath(2),
   },
   {
     date: "01/06/2026",
@@ -26,7 +31,7 @@ const blogs = [
     title: "Shopify Integrated with GoHighLevel: Complete Setup...",
     description:
       "Learn how to integrate Shopify with GoHighLevel to automate abandoned cart recovery, post-purchase nurture, CRM sync,...",
-    image: "/images/agency3.svg+xml",
+    image: getImagePath(3),
   },
   {
     date: "31/05/2026",
@@ -34,7 +39,7 @@ const blogs = [
     title: "How to Become a GoHighLevel Partner (2026 Guide)",
     description:
       "Learn how to become a GoHighLevel partner in 2026. This guide covers the affiliate program, SaaS reseller path, agency partnership, and...",
-    image: "/images/agency4.svg+xml",
+    image: getImagePath(4),
   },
   {
     date: "21/05/2026",
@@ -42,7 +47,7 @@ const blogs = [
     title: "Is GoHighLevel Free to Use? (Honest 2026 Answer)",
     description:
       "Is GoHighLevel free? No free plan exists — but there is a 14-day free trial with no credit card needed. This guide covers all GoHighLevel...",
-    image: "/images/agency5.svg+xml",
+    image: getImagePath(5),
   },
   {
     date: "18/05/2026",
@@ -50,7 +55,7 @@ const blogs = [
     title: "GoHighLevel Automation Workflows (2026)",
     description:
       "Master automation with GoHighLevel. Build complex workflows, triggers, and actions to scale your agency operations.",
-    image: "/images/agency6.svg+xml",
+    image: getImagePath(6),
   },
   ...Array.from({ length: 14 }).map((_, i) => {
     const idx = i + 7;
@@ -76,7 +81,7 @@ const blogs = [
       title: `GoHighLevel Insight #${idx} — ${topics[i]}`,
       description:
         "Explore advanced GoHighLevel tactics and real-world case studies. This guide covers implementation, best practices, and performance optimization.",
-      image: `/images/agency${idx}.svg+xml`,
+      image: getImagePath(idx),
     };
   }),
 ];
