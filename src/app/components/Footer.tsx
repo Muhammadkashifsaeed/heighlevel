@@ -46,8 +46,8 @@ const services = [
 ];
 
 const company = [
-  { label: "Meet the CEO", href: "/meet-the-ceo" },
-  { label: "FAQ", href: "/faq" },
+  { label: "Meet the CEO", href: "/hire-expert" },
+  { label: "FAQ", href: "/hire-expert" },
   { label: "Hire Automation Expert", href: "/hire-expert" },
   { label: "Blog", href: "/blogs" },
   { label: "Contact Us", href: "/contact" },
