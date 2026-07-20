@@ -1,12 +1,10 @@
-import BlogHero from "../components/BlogHero";
-import BlogGrid from "../components/BlogGrid";
+import BlogComingSoon from "../components/BlogComingSoon";
 import Footer from "../components/Footer";
 
 export default function BlogsPage() {
   return (
     <>
-      <BlogHero />
-      <BlogGrid />
+      <BlogComingSoon />
       <Footer />
     </>
   );
