@@ -245,7 +245,7 @@ export default function DiscoveryCall() {
                       Working Hours
                     </p>
                     <p className="mt-1 text-lg font-bold text-[#111111]">
-                      Mon - Fri, 9AM - 6PM (EST)
+                      Mon - Fri, 3:00 PM - 12:00 AM (PKT)
                     </p>
                   </div>
                 </div>
