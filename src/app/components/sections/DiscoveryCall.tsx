@@ -15,6 +15,30 @@ import {
   ChevronRight,
 } from "lucide-react";
 
+function FacebookIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
+      <path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z" />
+    </svg>
+  );
+}
+
+function LinkedinIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
+      <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM10 9h3.8v1.7h.1c.5-.9 1.8-1.9 3.6-1.9 3.9 0 4.6 2.5 4.6 5.8V21h-4v-5.3c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V21h-4z" />
+    </svg>
+  );
+}
+
+function InstagramIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
+      <path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.1-1.1.1-1.7.2-2.1.4-.5.2-.9.4-1.3.8-.4.4-.6.8-.8 1.3-.2.4-.3 1-.4 2.1C2.6 9.9 2.6 10.3 2.6 12s0 2.1.1 3.3c.1 1.1.2 1.7.4 2.1.2.5.4.9.8 1.3.4.4.8.6 1.3.8.4.2 1 .3 2.1.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1-.1 1.7-.2 2.1-.4.5-.2.9-.4 1.3-.8.4-.4.6-.8.8-1.3.2-.4.3-1 .4-2.1.1-1.2.1-1.6.1-3.3s0-2.1-.1-3.3c-.1-1.1-.2-1.7-.4-2.1-.2-.5-.4-.9-.8-1.3-.4-.4-.8-.6-1.3-.8-.4-.2-1-.3-2.1-.4C15.5 4 15.1 4 12 4zm0 3.1a4.9 4.9 0 1 1 0 9.8 4.9 4.9 0 0 1 0-9.8zm0 1.8a3.1 3.1 0 1 0 0 6.2 3.1 3.1 0 0 0 0-6.2zm5.1-.6a1.1 1.1 0 1 1 0 2.3 1.1 1.1 0 0 1 0-2.3z" />
+    </svg>
+  );
+}
+
 const faqs = [
   {
     q: "What should I prepare for the call?",
@@ -47,7 +71,7 @@ const months = [
 ];
 
 const timeZones = [
-  "GMT+05:00 Asia/Multan (GMT+5)",
+  "GMT+05:00 Asia/Karachi (GMT+5)",
   "GMT+04:00 Asia/Dubai (GMT+4)",
   "GMT+03:00 Asia/Riyadh (GMT+3)",
   "GMT+00:00 Europe/London (GMT+0)",
@@ -56,10 +80,27 @@ const timeZones = [
   "GMT+08:00 Asia/Singapore (GMT+8)",
 ];
 
+const socials = [
+  {
+    Icon: FacebookIcon,
+    href: "https://facebook.com",
+    label: "Facebook",
+  },
+  {
+    Icon: InstagramIcon,
+    href: "https://instagram.com",
+    label: "Instagram",
+  },
+  {
+    Icon: LinkedinIcon,
+    href: "https://linkedin.com",
+    label: "LinkedIn",
+  },
+];
+
 export default function DiscoveryCall() {
   const today = useMemo(() => {
-    const d = new Date(2026, 6, 20);
-    return d;
+    return new Date(2026, 6, 20);
   }, []);
 
   const [currentMonth, setCurrentMonth] = useState(today.getMonth());
@@ -235,24 +276,18 @@ export default function DiscoveryCall() {
                 Connect With Us
               </h3>
               <div className="mt-6 flex gap-4">
-                <a
-                  href="#"
-                  className="flex h-12 w-12 items-center justify-center rounded-2xl border border-slate-200 bg-slate-50 text-slate-600 transition-all duration-300 hover:border-blue-600 hover:bg-blue-50 hover:text-blue-700"
-                >
-                  <span className="text-xs font-black">FB</span>
-                </a>
-                <a
-                  href="#"
-                  className="flex h-12 w-12 items-center justify-center rounded-2xl border border-slate-200 bg-slate-50 text-slate-600 transition-all duration-300 hover:border-pink-500 hover:bg-pink-50 hover:text-pink-600"
-                >
-                  <span className="text-xs font-black">IG</span>
-                </a>
-                <a
-                  href="#"
-                  className="flex h-12 w-12 items-center justify-center rounded-2xl border border-slate-200 bg-slate-50 text-slate-600 transition-all duration-300 hover:border-blue-700 hover:bg-blue-50 hover:text-blue-800"
-                >
-                  <span className="text-xs font-black">LN</span>
-                </a>
+                {socials.map(({ Icon, href, label }) => (
+                  <a
+                    key={label}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={label}
+                    className="flex h-12 w-12 items-center justify-center rounded-2xl border border-slate-200 bg-slate-50 text-slate-600 transition-all duration-300 hover:border-blue-500 hover:bg-blue-50 hover:text-blue-600"
+                  >
+                    <Icon className="h-5 w-5" />
+                  </a>
+                ))}
               </div>
             </motion.div>
 
@@ -378,7 +413,11 @@ export default function DiscoveryCall() {
                     <span className="h-4 w-4 rounded-full bg-blue-100 text-center text-xs leading-4 text-blue-600">
                       M
                     </span>
-                    {months[currentMonth]} {currentYear}
+                    Mon, 20 July, 2026
+                  </div>
+                  <div className="flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-medium text-[#111111]">
+                    <Globe className="h-4 w-4 text-yellow-600" />
+                    Asia/Karachi (GMT+5)
                   </div>
                 </div>
               </div>
