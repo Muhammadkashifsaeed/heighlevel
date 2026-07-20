@@ -1,5 +1,6 @@
 import HireExpertHero from "../components/HireExpertHero";
 import HireExpertWhyUs from "../components/HireExpertWhyUs";
+import HireExpertCTA from "../components/HireExpertCTA";
 import Footer from "../components/Footer";
 
 export default function HireExpertPage() {
@@ -7,6 +8,7 @@ export default function HireExpertPage() {
     <>
       <HireExpertHero />
       <HireExpertWhyUs />
+      <HireExpertCTA />
       <Footer />
     </>
   );
