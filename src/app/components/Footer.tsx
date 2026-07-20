@@ -36,12 +36,12 @@ const footerSocials = [
 ];
 
 const services = [
-  { label: "CRM Done-For-You", href: "/services/crm-done-for-you" },
-  { label: "AI Chatbot Agents", href: "/services/ai-chatbot-agents" },
-  { label: "n8n Automation", href: "/services/n8n-automation" },
-  { label: "Website & Funnel Development", href: "/services/website-funnel" },
-  { label: "Media Buyer Services", href: "/services/media-buyer" },
-  { label: "White-Label Support", href: "/services/white-label" },
+  { label: "CRM Done-For-You", href: "/services" },
+  { label: "AI Chatbot Agents", href: "/services" },
+  { label: "n8n Automation", href: "/services" },
+  { label: "Website & Funnel Development", href: "/services" },
+  { label: "Media Buyer Services", href: "/services" },
+  { label: "White-Label Support", href: "/services" },
   { label: "Grow SaaS", href: "/grow-saas" },
 ];
 
