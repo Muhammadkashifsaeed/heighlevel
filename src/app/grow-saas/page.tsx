@@ -1,5 +1,6 @@
 import GrowSaasHero from "../components/GrowSaasHero";
 import GrowSaasFeatures from "../components/GrowSaasFeatures";
+import GrowSaasProblems from "../components/GrowSaasProblems";
 import Footer from "../components/Footer";
 
 export default function GrowSaaSPage() {
@@ -7,6 +8,7 @@ export default function GrowSaaSPage() {
     <>
       <GrowSaasHero />
       <GrowSaasFeatures />
+      <GrowSaasProblems />
       <Footer />
     </>
   );
