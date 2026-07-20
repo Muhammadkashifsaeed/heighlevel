@@ -230,7 +230,7 @@ export default function DiscoveryCall() {
                       Email Us
                     </p>
                     <p className="mt-1 text-lg font-bold text-[#111111]">
-                      admin@grow-highlevel.com
+                      info@digistartupgroup.com
                     </p>
                   </div>
                 </div>
@@ -260,7 +260,10 @@ export default function DiscoveryCall() {
                       Location
                     </p>
                     <p className="mt-1 text-lg font-bold text-[#111111]">
-                      Serving Global Agencies
+                      Pakistan
+                    </p>
+                    <p className="mt-1 text-base text-[#6B7280]">
+                      Office # 25, Shoukat Commercial Center, Bahawalpur Rd, above HBL Bank, Multan, 66000
                     </p>
                   </div>
                 </div>

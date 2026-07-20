@@ -168,11 +168,11 @@ export default function Footer() {
               Get In Touch
             </h3>
             <a
-              href="mailto:admin@grow-highlevel.com"
+              href="mailto:info@digistartupgroup.com"
               className="flex items-center gap-2 text-sm text-slate-400 transition-colors duration-300 hover:text-[#7cc0f0]"
             >
               <Mail className="h-4 w-4 shrink-0" />
-              admin@grow-highlevel.com
+              info@digistartupgroup.com
             </a>
             <p className="flex items-center gap-2 text-sm text-slate-400">
               <Clock className="h-4 w-4 shrink-0" />
