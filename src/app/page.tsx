@@ -3,6 +3,7 @@ import PainPoints from "./components/PainPoints";
 import PainGrid from "./components/PainGrid";
 import HowWeWork from "./components/HowWeWork";
 import SocialProof from "./components/SocialProof";
+import VideoTestimonials from "./components/VideoTestimonials";
 import FAQSection from "./components/FAQSection";
 import WhyChooseUs from "./components/WhyChooseUs";
 import Services from "./components/Services";
@@ -17,6 +18,7 @@ export default function Home() {
       <WhyChooseUs />
       <Services />
       <HowWeWork />
+      <VideoTestimonials />
       <SocialProof />
       <FAQSection />
       <Footer />
