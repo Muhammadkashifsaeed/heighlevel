@@ -83,17 +83,17 @@ const timeZones = [
 const socials = [
   {
     Icon: FacebookIcon,
-    href: "https://facebook.com",
+    href: "https://www.facebook.com/digistartupofficial",
     label: "Facebook",
   },
   {
     Icon: InstagramIcon,
-    href: "https://instagram.com",
+    href: "https://www.instagram.com/pro_developer92",
     label: "Instagram",
   },
   {
     Icon: LinkedinIcon,
-    href: "https://linkedin.com",
+    href: "https://pk.linkedin.com/company/digistartupofficial",
     label: "LinkedIn",
   },
 ];

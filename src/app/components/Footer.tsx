@@ -30,9 +30,9 @@ function InstagramIcon({ className }: { className?: string }) {
 }
 
 const footerSocials = [
-  { Icon: InstagramIcon, href: "https://instagram.com", label: "Instagram" },
-  { Icon: FacebookIcon, href: "https://facebook.com", label: "Facebook" },
-  { Icon: LinkedinIcon, href: "https://linkedin.com", label: "LinkedIn" },
+  { Icon: InstagramIcon, href: "https://www.instagram.com/pro_developer92", label: "Instagram" },
+  { Icon: FacebookIcon, href: "https://www.facebook.com/digistartupofficial", label: "Facebook" },
+  { Icon: LinkedinIcon, href: "https://pk.linkedin.com/company/digistartupofficial", label: "LinkedIn" },
 ];
 
 const services = [
