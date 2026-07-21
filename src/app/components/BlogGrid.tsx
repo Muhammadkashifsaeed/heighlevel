@@ -12,49 +12,49 @@ const blogs = [
   {
     date: "07/06/2026",
     readTime: "10 min read",
-    title: "GoDigiStartup Login: How to Log In, Fix Issues & Manage...",
+    title: "DigiStartup Login: How to Log In, Fix Issues & Manage...",
     description:
-      "Complete GoDigiStartup login guide for 2026. Learn how to access your account via web, mobile app, or white-label portal — plus how to...",
+      "Complete DigiStartup login guide for 2026. Learn how to access your account via web, mobile app, or white-label portal — plus how to...",
     image: getImagePath(1),
   },
   {
     date: "05/06/2026",
     readTime: "8 min read",
-    title: "GoDigiStartup API: Complete Guide for Integrations,...",
+    title: "DigiStartup API: Complete Guide for Integrations,...",
     description:
-      "The GoDigiStartup API lets agencies and developers connect GHL to any tool — CRM, Zapier, n8n, or custom code. This 2026 guide...",
+      "The DigiStartup API lets agencies and developers connect GHL to any tool — CRM, Zapier, n8n, or custom code. This 2026 guide...",
     image: getImagePath(2),
   },
   {
     date: "01/06/2026",
     readTime: "9 min read",
-    title: "Shopify Integrated with GoDigiStartup: Complete Setup...",
+    title: "Shopify Integrated with DigiStartup: Complete Setup...",
     description:
-      "Learn how to integrate Shopify with GoDigiStartup to automate abandoned cart recovery, post-purchase nurture, CRM sync,...",
+      "Learn how to integrate Shopify with DigiStartup to automate abandoned cart recovery, post-purchase nurture, CRM sync,...",
     image: getImagePath(3),
   },
   {
     date: "31/05/2026",
     readTime: "11 min read",
-    title: "How to Become a GoDigiStartup Partner (2026 Guide)",
+    title: "How to Become a DigiStartup Partner (2026 Guide)",
     description:
-      "Learn how to become a GoDigiStartup partner in 2026. This guide covers the affiliate program, SaaS reseller path, agency partnership, and...",
+      "Learn how to become a DigiStartup partner in 2026. This guide covers the affiliate program, SaaS reseller path, agency partnership, and...",
     image: getImagePath(4),
   },
   {
     date: "21/05/2026",
     readTime: "7 min read",
-    title: "Is GoDigiStartup Free to Use? (Honest 2026 Answer)",
+    title: "Is DigiStartup Free to Use? (Honest 2026 Answer)",
     description:
-      "Is GoDigiStartup free? No free plan exists — but there is a 14-day free trial with no credit card needed. This guide covers all GoDigiStartup...",
+      "Is DigiStartup free? No free plan exists — but there is a 14-day free trial with no credit card needed. This guide covers all DigiStartup...",
     image: getImagePath(5),
   },
   {
     date: "18/05/2026",
     readTime: "6 min read",
-    title: "GoDigiStartup Automation Workflows (2026)",
+    title: "DigiStartup Automation Workflows (2026)",
     description:
-      "Master automation with GoDigiStartup. Build complex workflows, triggers, and actions to scale your agency operations.",
+      "Master automation with DigiStartup. Build complex workflows, triggers, and actions to scale your agency operations.",
     image: getImagePath(6),
   },
   ...Array.from({ length: 14 }).map((_, i) => {
@@ -78,9 +78,9 @@ const blogs = [
     return {
       date: `0${(i % 9) + 1}/06/2026`,
       readTime: `${(i % 5) + 5} min read`,
-      title: `GoDigiStartup Insight #${idx} — ${topics[i]}`,
+      title: `DigiStartup Insight #${idx} — ${topics[i]}`,
       description:
-        "Explore advanced GoDigiStartup tactics and real-world case studies. This guide covers implementation, best practices, and performance optimization.",
+        "Explore advanced DigiStartup tactics and real-world case studies. This guide covers implementation, best practices, and performance optimization.",
       image: getImagePath(idx),
     };
   }),

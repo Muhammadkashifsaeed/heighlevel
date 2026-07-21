@@ -16,8 +16,8 @@ const services = [
   {
     Icon: Settings,
     color: "text-blue-500 bg-blue-50",
-    title: "GoDigiStartup CRM Setup & Management",
-    desc: "GoDigiStartup is one of the most powerful CRM and marketing automation platforms available today, but most businesses only use a fraction of its capabilities. We help you set up and optimize your GoDigiStartup account for maximum performance, ensuring your CRM is organized, efficient, and ready to scale with your business.",
+    title: "DigiStartup CRM Setup & Management",
+    desc: "DigiStartup is one of the most powerful CRM and marketing automation platforms available today, but most businesses only use a fraction of its capabilities. We help you set up and optimize your DigiStartup account for maximum performance, ensuring your CRM is organized, efficient, and ready to scale with your business.",
   },
   {
     Icon: Workflow,
@@ -29,7 +29,7 @@ const services = [
     Icon: Users,
     color: "text-purple-500 bg-purple-50",
     title: "White Label Agency Support",
-    desc: "We provide white-label fulfillment and backend support for agencies that want to deliver more while focusing on sales and client relationships. Our experienced team works behind the scenes to manage GoDigiStartup services under your brand, helping you scale without increasing overhead.",
+    desc: "We provide white-label fulfillment and backend support for agencies that want to deliver more while focusing on sales and client relationships. Our experienced team works behind the scenes to manage DigiStartup services under your brand, helping you scale without increasing overhead.",
   },
   {
     Icon: Bot,

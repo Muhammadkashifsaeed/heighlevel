@@ -24,7 +24,7 @@ const steps = [
     dot: "bg-blue-500",
     divider: "bg-blue-500",
     title: "Build Your Team",
-    body: "We assign dedicated GoDigiStartup experts CRM specialists and automation builders under your brand.",
+    body: "We assign dedicated DigiStartup experts CRM specialists and automation builders under your brand.",
   },
   {
     Icon: Map,

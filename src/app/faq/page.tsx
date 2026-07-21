@@ -3,8 +3,8 @@ import { ArrowRight } from "lucide-react";
 
 const faqs = [
   {
-    q: "What is GoDigiStartup?",
-    a: "GoDigiStartup is an all-in-one CRM and marketing platform designed for agencies. We help you set it up, automate it, and scale it.",
+    q: "What is DigiStartup?",
+    a: "DigiStartup is an all-in-one CRM and marketing platform designed for agencies. We help you set it up, automate it, and scale it.",
   },
   {
     q: "How fast can you set up my account?",

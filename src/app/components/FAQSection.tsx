@@ -6,18 +6,18 @@ import { ChevronDown } from "lucide-react";
 const faqs = [
   {
     q: "What services does DigiStartup provide?",
-    a: "DigiStartup provides complete GoDigiStartup CRM setup, AI automation, N8N workflow development, conversion-focused funnel building, and dedicated GoDigiStartup Virtual Assistants (VAs) for agencies, coaches, and SaaS companies.",
+    a: "DigiStartup provides complete DigiStartup CRM setup, AI automation, N8N workflow development, conversion-focused funnel building, and dedicated DigiStartup Virtual Assistants (VAs) for agencies, coaches, and SaaS companies.",
   },
   {
-    q: "Can I hire a dedicated GoDigiStartup Virtual Assistant?",
-    a: "Yes. We provide highly trained, dedicated GoDigiStartup Virtual Assistants and system experts who integrate directly into your team to handle CRM management, pipeline optimization, and daily technical fulfillment.",
+    q: "Can I hire a dedicated DigiStartup Virtual Assistant?",
+    a: "Yes. We provide highly trained, dedicated DigiStartup Virtual Assistants and system experts who integrate directly into your team to handle CRM management, pipeline optimization, and daily technical fulfillment.",
   },
   {
-    q: "How does AI automation integrate with GoDigiStartup?",
-    a: "We build custom AI voice agents and chatbots that integrate directly into your GoDigiStartup pipelines. These AI agents can qualify leads, answer customer questions, and book appointments automatically 24/7.",
+    q: "How does AI automation integrate with DigiStartup?",
+    a: "We build custom AI voice agents and chatbots that integrate directly into your DigiStartup pipelines. These AI agents can qualify leads, answer customer questions, and book appointments automatically 24/7.",
   },
   {
-    q: "Do you offer white-label GoDigiStartup support for agencies?",
+    q: "Do you offer white-label DigiStartup support for agencies?",
     a: "Absolutely. We provide comprehensive white-label agency fulfillment, meaning our team builds the funnels, workflows, and automations completely under your brand, allowing you to scale without hiring internally.",
   },
   {
@@ -42,7 +42,7 @@ export default function FAQSection() {
           <span className="text-green-600">Questions</span>
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-center text-base leading-7 text-slate-600">
-          Everything you need to know about our GoDigiStartup infrastructure and
+          Everything you need to know about our DigiStartup infrastructure and
           AI automation services.
         </p>
 

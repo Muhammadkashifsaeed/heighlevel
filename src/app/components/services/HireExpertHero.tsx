@@ -5,7 +5,7 @@ import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { Users, ArrowRight, Check, Bot } from "lucide-react";
 
 const services = [
-  ["GoDigiStartup Experts", "AI Specialists", "Graphic Designers"],
+  ["DigiStartup Experts", "AI Specialists", "Graphic Designers"],
   ["Automation Engineers", "Funnel Builders", "Video Editors"],
   ["N8N Developers", "Media Buyers", "Virtual Assistants"],
 ];
@@ -136,7 +136,7 @@ export default function HireExpertHero() {
           transition={{ delay: 0.4, duration: 0.6 }}
           className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-slate-300 md:text-xl"
         >
-          Need ongoing support? Hire a dedicated GoDigiStartup Expert, automation
+          Need ongoing support? Hire a dedicated DigiStartup Expert, automation
           specialist, designer, media buyer, or virtual assistant to become a
           seamless extension of your agency.
         </motion.p>

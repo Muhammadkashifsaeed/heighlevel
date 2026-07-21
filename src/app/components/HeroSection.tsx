@@ -117,7 +117,7 @@ export default function HeroSection() {
             </h1>
             <p className="max-w-2xl text-base leading-7 text-slate-600">
               Your agency grows when your fulfillment actually works. We handle
-              the full GoDigiStartup build — CRM setup, pipeline management,
+              the full DigiStartup build — CRM setup, pipeline management,
               automations, workflows, funnels, AI chatbots, Facebook Ads, Google
               Ads, Klaviyo, ActiveCampaign, and end-to-end tech support so you
               scale without the stress.

@@ -5,10 +5,10 @@ import { Settings, Check, ArrowRight } from "lucide-react";
 
 const services = [
   {
-    title: "GoDigiStartup CRM Setup & Management",
+    title: "DigiStartup CRM Setup & Management",
     subheading: "Done-For-You GHL Implementation by Certified Experts",
     description:
-      "GoDigiStartup is one of the most powerful CRM and marketing automation platforms available today, but most businesses only use a fraction of its capabilities. Our experts build, optimize, and manage complete CRM systems that help businesses automate lead generation, sales, marketing, customer communication, and onboarding.",
+      "DigiStartup is one of the most powerful CRM and marketing automation platforms available today, but most businesses only use a fraction of its capabilities. Our experts build, optimize, and manage complete CRM systems that help businesses automate lead generation, sales, marketing, customer communication, and onboarding.",
     features: [
       "Complete CRM Account Setup",
       "SaaS Mode & White Label Config",
