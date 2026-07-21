@@ -39,7 +39,7 @@ export default function HeroSection() {
       <div className="relative z-10 mx-auto max-w-[1400px] px-6">
         <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-[1fr_1.6fr_1fr]">
           {/* LEFT - Floating Cards */}
-          <div className="flex flex-col gap-6">
+          <div className="hidden lg:flex flex-col gap-6">
             {/* AI Agent Card */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
@@ -140,7 +140,7 @@ export default function HeroSection() {
           </motion.div>
 
           {/* RIGHT - Floating Cards */}
-          <div className="flex flex-col gap-6">
+          <div className="hidden lg:flex flex-col gap-6">
             {/* Pipeline Status */}
             <motion.div
               initial={{ opacity: 0, x: 30 }}

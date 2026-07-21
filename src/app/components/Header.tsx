@@ -34,8 +34,8 @@ export default function Header() {
       className="fixed top-0 left-0 right-0 z-50 w-full"
     >
       <div
-        className={`mx-auto flex h-16 max-w-7xl items-center justify-between gap-6 rounded-full border border-border px-4 shadow-sm backdrop-blur-md transition-all duration-300 sm:px-6 ${
-          scrolled ? "bg-white" : "bg-card/70"
+        className={`mx-auto flex h-16 max-w-7xl items-center justify-between gap-6 rounded-full border border-border px-4 shadow-sm transition-all duration-300 sm:px-6 sm:backdrop-blur-md ${
+          scrolled ? "bg-white" : "bg-white sm:bg-card/70"
         }`}
       >
         <div className="flex items-center gap-3">
