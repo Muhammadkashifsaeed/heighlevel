@@ -31,8 +31,7 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 overflow-hidden px-4 pt-3 sm:px-6 transition-all duration-300`}
-      style={{ willChange: "transform" }}
+      className={`fixed top-0 left-0 right-0 z-50 w-full px-4 pt-3 sm:px-6 transition-all duration-300`}
     >
       <div
         className={`mx-auto flex h-16 max-w-7xl items-center justify-between gap-6 rounded-full border border-border px-6 shadow-sm backdrop-blur-md transition-all duration-300 ${
@@ -83,7 +82,7 @@ export default function Header() {
 
         {/* Mobile menu */}
         {menuOpen && (
-          <div className="absolute top-full left-0 right-0 mt-2 rounded-3xl border border-slate-200 bg-white p-6 shadow-xl lg:hidden">
+          <div className="absolute top-full left-0 right-0 mt-2 mx-4 rounded-3xl border border-slate-200 bg-white p-6 shadow-xl lg:hidden z-50">
             <nav className="flex flex-col gap-4">
               {navLinks.map((link) => {
                 const active = pathname === link.href;
