@@ -14,8 +14,28 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "GrowHigh",
-  description: "A clean, production-ready Next.js starter.",
+  title: "DigiStartup | Done-For-You GoHighLevel CRM & Automation Agency",
+  description: "DigiStartup provides complete GoHighLevel CRM setup, AI automation, N8N workflow development, conversion-focused funnel building, and dedicated GoHighLevel Virtual Assistants for agencies, coaches, and SaaS companies.",
+  keywords: ["GoHighLevel", "CRM setup", "AI automation", "N8N workflows", "funnel building", "virtual assistant", "agency automation", "white-label support"],
+  authors: [{ name: "DigiStartup" }],
+  openGraph: {
+    title: "DigiStartup | Done-For-You GoHighLevel CRM & Automation Agency",
+    description: "Complete GoHighLevel CRM setup, AI automation, N8N workflow development, and dedicated virtual assistants for agencies.",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "DigiStartup | Done-For-You GoHighLevel CRM & Automation Agency",
+    description: "Complete GoHighLevel CRM setup, AI automation, N8N workflow development, and dedicated virtual assistants for agencies.",
+  },
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
 };
 
 export default function RootLayout({
