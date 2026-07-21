@@ -129,7 +129,7 @@ export default function GrowSaasProblems() {
               </div>
 
               {/* Number */}
-              <span className="mt-4 sm:mt-6 text-3xl sm:text-4xl md:text-5xl font-bold text-white/10 transition-colors duration-300 group-hover:text-emerald-200/30">
+              <span className="hidden sm:block mt-4 sm:mt-6 text-3xl sm:text-4xl md:text-5xl font-bold text-white/10 transition-colors duration-300 group-hover:text-emerald-200/30">
                 {problem.num}
               </span>
 

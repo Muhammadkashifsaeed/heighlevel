@@ -104,7 +104,7 @@ export default function GrowSaasClients() {
               className="group flex flex-col rounded-2xl sm:rounded-[24px] border border-slate-200 bg-white p-5 sm:p-6 md:p-8 shadow-sm transition-all duration-300 hover:border-emerald-300 hover:shadow-xl"
             >
               {/* Number */}
-              <span className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-200 transition-colors duration-300 group-hover:text-emerald-200">
+              <span className="hidden sm:block text-3xl sm:text-4xl md:text-5xl font-bold text-slate-200 transition-colors duration-300 group-hover:text-emerald-200">
                 {card.num}
               </span>
 
