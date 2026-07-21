@@ -128,11 +128,6 @@ export default function GrowSaasProblems() {
                 <problem.Icon className="h-6 w-6 text-emerald-400 transition-all duration-300 group-hover:text-emerald-300 group-hover:drop-shadow-[0_0_8px_rgba(52,211,153,0.6)]" />
               </div>
 
-              {/* Number */}
-              <span className="hidden sm:block mt-4 sm:mt-6 text-3xl sm:text-4xl md:text-5xl font-bold text-white/10 transition-colors duration-300 group-hover:text-emerald-200/30">
-                {problem.num}
-              </span>
-
               {/* Content */}
               <h3 className="mt-3 sm:mt-4 text-base sm:text-lg md:text-xl font-bold text-white">{problem.title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-neutral-400">

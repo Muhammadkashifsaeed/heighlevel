@@ -103,26 +103,21 @@ export default function GrowSaasFeatures() {
         {/* FEATURE GRID */}
         <div className="mt-12 grid grid-cols-1 gap-4 sm:gap-6 md:gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, i) => (
-            <motion.div
-              key={feature.num}
-              custom={i}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-40px" }}
-              variants={cardVariants}
-              whileHover={{
-                y: -6,
-                borderColor: "rgba(52, 211, 153, 0.5)",
-                boxShadow: "0 20px 40px -12px rgba(16, 185, 129, 0.15)",
-              }}
-              className="group relative flex flex-col rounded-2xl sm:rounded-[28px] border border-slate-200 bg-white p-5 sm:p-6 md:p-8 shadow-sm transition-all duration-300 hover:border-emerald-300 hover:shadow-xl"
-            >
-              {/* Number */}
-              <span className="hidden sm:block text-3xl sm:text-4xl md:text-5xl font-bold text-slate-200 transition-colors duration-300 group-hover:text-emerald-200">
-                {feature.num}
-              </span>
-
-              {/* Content */}
+              <motion.div
+                key={feature.num}
+                custom={i}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: "-40px" }}
+                variants={cardVariants}
+                whileHover={{
+                  y: -6,
+                  borderColor: "rgba(52, 211, 153, 0.5)",
+                  boxShadow: "0 20px 40px -12px rgba(16, 185, 129, 0.15)",
+                }}
+                className="group relative flex flex-col rounded-2xl sm:rounded-[28px] border border-slate-200 bg-white p-5 sm:p-6 md:p-8 shadow-sm transition-all duration-300 hover:border-emerald-300 hover:shadow-xl"
+              >
+               {/* Content */}
               <h3 className="mt-3 sm:mt-4 text-base sm:text-lg md:text-xl font-bold text-slate-900">
                 {feature.title}
               </h3>

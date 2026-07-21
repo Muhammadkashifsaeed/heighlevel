@@ -108,11 +108,6 @@ export default function HireExpertWhyUs() {
                 <feature.Icon className="h-7 w-7 text-emerald-600 transition-all duration-300 group-hover:text-emerald-500" />
               </div>
 
-              {/* Number */}
-              <span className="hidden sm:block mt-4 sm:mt-6 text-3xl sm:text-4xl md:text-5xl font-bold text-slate-200 transition-colors duration-300 group-hover:text-emerald-200">
-                {feature.num}
-              </span>
-
               {/* Content */}
               <h3 className="mt-3 sm:mt-4 text-base sm:text-lg md:text-xl font-bold text-[#0F172A]">
                 {feature.title}
