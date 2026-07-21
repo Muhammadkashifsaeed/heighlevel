@@ -31,7 +31,8 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 px-4 pt-3 sm:px-6 transition-all duration-300`}
+      className={`fixed top-0 left-0 right-0 z-50 overflow-hidden px-4 pt-3 sm:px-6 transition-all duration-300`}
+      style={{ willChange: "transform" }}
     >
       <div
         className={`mx-auto flex h-16 max-w-7xl items-center justify-between gap-6 rounded-full border border-border px-6 shadow-sm backdrop-blur-md transition-all duration-300 ${
