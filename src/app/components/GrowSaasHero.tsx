@@ -140,7 +140,7 @@ export default function GrowSaasHero() {
       {/* ================= MAIN CONTENT ================= */}
       <motion.div
         style={{ y: heroY }}
-        className="relative z-10 mx-auto flex min-h-screen max-w-5xl flex-col items-center justify-center px-6 py-24 text-center"
+        className="relative z-10 mx-auto flex min-h-screen max-w-5xl flex-col items-center justify-center px-4 sm:px-6 py-12 sm:py-16 md:py-24 text-center"
       >
         {/* TOP BADGE */}
         <motion.div
@@ -148,7 +148,7 @@ export default function GrowSaasHero() {
           initial="hidden"
           animate="visible"
           variants={fadeUp}
-          className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-5 py-2.5 text-sm font-medium tracking-wide backdrop-blur-md transition-all duration-300 hover:scale-105 hover:border-emerald-400/40 hover:shadow-[0_0_20px_rgba(16,185,129,0.15)]"
+          className="mb-6 sm:mb-8 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-2 sm:px-4 sm:py-2.5 md:px-5 md:py-2.5 text-xs sm:text-sm font-medium tracking-wide backdrop-blur-md transition-all duration-300 hover:scale-105 hover:border-emerald-400/40 hover:shadow-[0_0_20px_rgba(16,185,129,0.15)]"
         >
           <span className="relative flex h-2.5 w-2.5">
             <span className="absolute inset-0 rounded-full bg-emerald-400 animate-ping opacity-75" />
@@ -165,7 +165,7 @@ export default function GrowSaasHero() {
           initial="hidden"
           animate="visible"
           variants={fadeUp}
-          className="mt-2 max-w-4xl text-5xl font-extrabold leading-[1.08] tracking-tight sm:text-6xl md:text-7xl lg:text-[88px]"
+          className="mt-2 max-w-4xl text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold leading-[1.08] tracking-tight"
         >
           Grow Your{" "}
           <span className="bg-[linear-gradient(90deg,#22c55e,#06b6d4,#3b82f6,#eab308)] bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(34,197,94,0.3)]">
@@ -181,7 +181,7 @@ export default function GrowSaasHero() {
           initial="hidden"
           animate="visible"
           variants={fadeUp}
-          className="mx-auto mt-8 max-w-[900px] text-lg leading-relaxed text-neutral-400 sm:text-xl"
+          className="mx-auto mt-6 max-w-[900px] text-sm sm:text-base md:text-lg leading-relaxed text-neutral-400"
         >
           We provide the complete infrastructure, support, and end-to-end
           marketing systems you need to scale your SaaS business. From backend
@@ -202,7 +202,7 @@ export default function GrowSaasHero() {
               key={i}
               whileHover={{ y: -4, scale: 1.03 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
-              className={`group flex w-full items-center gap-3 rounded-full border border-white/10 bg-white/5 px-5 py-3.5 text-sm font-medium text-neutral-200 backdrop-blur-md transition-all duration-300 hover:border-white/25 hover:shadow-[0_0_24px_rgba(255,255,255,0.06)] sm:w-auto ${pill.shadow} hover:${pill.shadow.replace("20", "40")}`}
+              className={`group flex w-full items-center gap-2 sm:gap-3 rounded-full border border-white/10 bg-white/5 px-3 py-2 text-xs sm:text-sm font-medium text-neutral-200 backdrop-blur-md transition-all duration-300 hover:border-white/25 hover:shadow-[0_0_24px_rgba(255,255,255,0.06)] sm:w-auto sm:px-4 sm:py-2.5 md:px-5 md:py-3.5 ${pill.shadow} hover:${pill.shadow.replace("20", "40")}`}
             >
               <span
                 className={`h-2.5 w-2.5 shrink-0 rounded-full ${pill.color} shadow-[0_0_8px_rgba(255,255,255,0.3)]`}
@@ -224,21 +224,21 @@ export default function GrowSaasHero() {
             href="/contact"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}
-            className="group relative inline-flex items-center gap-3 overflow-hidden rounded-full bg-[linear-gradient(135deg,#22c55e,#3b82f6)] px-10 py-4 text-base font-semibold text-white shadow-[0_0_40px_rgba(34,197,94,0.3)] transition-all duration-300 hover:shadow-[0_0_60px_rgba(34,197,94,0.5)]"
+            className="group relative inline-flex items-center gap-2 sm:gap-3 overflow-hidden rounded-full bg-[linear-gradient(135deg,#22c55e,#3b82f6)] px-5 py-2.5 text-sm sm:text-base font-semibold text-white shadow-[0_0_40px_rgba(34,197,94,0.3)] transition-all duration-300 hover:shadow-[0_0_60px_rgba(34,197,94,0.5)] sm:px-6 sm:py-3 md:px-8 md:py-4"
           >
             <span className="absolute inset-0 bg-[linear-gradient(135deg,#22c55e,#06b6d4,#3b82f6)] bg-[length:200%_auto] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
             <span className="relative z-10">Book a Discovery Call</span>
-            <motion.span
-              className="relative z-10"
-              animate={{ x: [0, 4, 0] }}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
-            >
-              <ArrowRight className="h-5 w-5" />
-            </motion.span>
+          <motion.span
+            className="relative z-10"
+            animate={{ x: [0, 4, 0] }}
+            transition={{
+              duration: 1.5,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          >
+            <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
+          </motion.span>
           </motion.a>
         </motion.div>
       </motion.div>

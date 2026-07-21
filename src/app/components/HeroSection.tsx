@@ -18,7 +18,7 @@ const workflowNodes = [
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-white pt-16 pb-20 sm:py-32">
+    <section className="relative overflow-hidden bg-white pt-20 pb-16 sm:py-32">
       {/* Background grid pattern */}
       <div
         className="absolute inset-0 opacity-[0.03]"

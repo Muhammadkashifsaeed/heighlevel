@@ -83,7 +83,7 @@ export default function HireExpertHero() {
   return (
     <section
       ref={containerRef}
-      className="relative overflow-hidden bg-gradient-to-br from-green-950 via-black to-blue-950 py-24"
+      className="relative overflow-hidden bg-gradient-to-br from-green-950 via-black to-blue-950 py-12 sm:py-16 md:py-24"
     >
       <motion.div
         style={{ x: bgX, y: bgY }}
@@ -92,24 +92,24 @@ export default function HireExpertHero() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(34,197,94,0.15)_0%,_transparent_70%)]" />
       </motion.div>
 
-      <FloatingOrb delay={0} x="10%" y="20%" size="400px" color="bg-green-500/10" />
-      <FloatingOrb delay={3} x="60%" y="50%" size="300px" color="bg-blue-500/10" />
-      <FloatingOrb delay={6} x="80%" y="10%" size="350px" color="bg-purple-500/10" />
-      <FloatingOrb delay={2} x="30%" y="70%" size="250px" color="bg-cyan-500/10" />
+      <FloatingOrb delay={0} x="10%" y="20%" size="200px" color="bg-green-500/10" />
+      <FloatingOrb delay={3} x="60%" y="50%" size="150px" color="bg-blue-500/10" />
+      <FloatingOrb delay={6} x="80%" y="10%" size="180px" color="bg-purple-500/10" />
+      <FloatingOrb delay={2} x="30%" y="70%" size="130px" color="bg-cyan-500/10" />
 
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] sm:bg-[size:32px_32px]" />
 
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="relative z-10 mx-auto max-w-6xl px-6 text-center"
+        className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6 text-center"
       >
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2, duration: 0.5 }}
-          className="mb-8 inline-flex items-center gap-2 rounded-full border border-green-500/30 bg-green-500/10 px-5 py-2 backdrop-blur-sm"
+          className="mb-6 sm:mb-8 inline-flex items-center gap-2 rounded-full border border-green-500/30 bg-green-500/10 px-4 py-2 backdrop-blur-sm sm:px-5 sm:py-2"
         >
           <Users className="h-4 w-4 text-green-400" />
           <span className="text-sm font-semibold uppercase tracking-widest text-green-400">
@@ -121,7 +121,7 @@ export default function HireExpertHero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.6 }}
-          className="text-5xl font-bold leading-tight tracking-tight text-white md:text-6xl"
+          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight tracking-tight text-white"
         >
           Build Your Dream Team.
           <br />
@@ -134,7 +134,7 @@ export default function HireExpertHero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.6 }}
-          className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-slate-300 md:text-xl"
+          className="mx-auto mt-4 max-w-2xl text-sm sm:text-base md:text-lg leading-relaxed text-slate-300"
         >
           Need ongoing support? Hire a dedicated DigiStartup Expert, automation
           specialist, designer, media buyer, or virtual assistant to become a
@@ -145,7 +145,7 @@ export default function HireExpertHero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.6 }}
-          className="mx-auto mt-12 grid max-w-4xl grid-cols-1 gap-8 md:grid-cols-3"
+          className="mx-auto mt-8 sm:mt-10 md:mt-12 grid max-w-4xl grid-cols-1 gap-4 sm:gap-6 md:gap-8 md:grid-cols-3"
         >
           {services.map((col, colIdx) => (
             <div key={colIdx} className="flex flex-col gap-4">
@@ -153,7 +153,7 @@ export default function HireExpertHero() {
                 <motion.div
                   key={item}
                   whileHover={{ x: 8 }}
-                  className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 p-3 backdrop-blur-sm transition-colors duration-300 hover:border-green-500/30 hover:bg-white/10"
+                  className="flex items-center gap-2 sm:gap-3 rounded-xl border border-white/10 bg-white/5 p-2 sm:p-3 backdrop-blur-sm transition-colors duration-300 hover:border-green-500/30 hover:bg-white/10"
                 >
                   <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-green-500/20 text-green-400">
                     <Check className="h-3 w-3" />
@@ -171,13 +171,13 @@ export default function HireExpertHero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.6 }}
-          className="mt-12 flex flex-col items-center justify-center gap-6"
+          className="mt-8 sm:mt-10 md:mt-12 flex flex-col items-center justify-center gap-4 sm:gap-6"
         >
           <motion.a
             href="/contact"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-green-600 to-blue-600 px-8 py-4 text-base font-semibold text-white shadow-lg shadow-green-500/25 transition-all duration-300 hover:shadow-[0_0_40px_rgba(34,197,94,0.4)]"
+            className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-green-600 to-blue-600 px-5 py-2.5 text-sm sm:text-base font-semibold text-white shadow-lg shadow-green-500/25 transition-all duration-300 hover:shadow-[0_0_40px_rgba(34,197,94,0.4)] sm:px-6 sm:py-3 md:px-8 md:py-4"
           >
             Hire Your Expert Team
             <ArrowRight className="h-5 w-5" />

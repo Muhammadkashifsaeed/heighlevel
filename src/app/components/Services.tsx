@@ -66,16 +66,16 @@ export default function Services() {
         </div>
 
         {/* 6 BOXES - 3 + 3 */}
-        <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           {cards.map(({ Icon, accent, title, body }) => (
             <div
               key={title}
-              className="group rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-500 hover:shadow-lg"
+              className="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-500 hover:shadow-lg sm:rounded-3xl sm:p-7"
             >
-              <span className={`flex h-12 w-12 items-center justify-center rounded-2xl ${accent} transition-transform duration-300 group-hover:scale-110`}>
-                <Icon className="h-6 w-6" />
+              <span className={`flex h-10 w-10 items-center justify-center rounded-xl ${accent} transition-transform duration-300 group-hover:scale-110 sm:h-12 sm:w-12 sm:rounded-2xl`}>
+                <Icon className="h-5 w-5 sm:h-6 sm:w-6" />
               </span>
-              <h3 className="mt-5 text-lg font-bold text-slate-900">{title}</h3>
+              <h3 className="mt-3 text-base font-bold text-slate-900 sm:mt-5 sm:text-lg">{title}</h3>
               <p className="mt-2 text-sm leading-6 text-slate-600">{body}</p>
             </div>
           ))}

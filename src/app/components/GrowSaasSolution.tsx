@@ -19,7 +19,7 @@ const progressBars = [
 
 export default function GrowSaasSolution() {
   return (
-    <section className="relative overflow-hidden bg-white py-24 sm:py-32">
+    <section className="relative overflow-hidden bg-white py-12 sm:py-16 md:py-24">
       {/* Background glows */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -left-32 -top-32 h-[500px] w-[500px] rounded-full bg-emerald-200/40 blur-[140px]" />
@@ -28,7 +28,7 @@ export default function GrowSaasSolution() {
       </div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-6">
-        <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-8 sm:gap-12 md:gap-16 lg:grid-cols-2">
           {/* LEFT SIDE */}
           <div>
             {/* Badge */}
@@ -51,7 +51,7 @@ export default function GrowSaasSolution() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: 0.1 }}
-              className="text-4xl font-extrabold leading-[1.1] tracking-tight text-[#0F172A] sm:text-5xl md:text-6xl"
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold leading-[1.1] tracking-tight text-[#0F172A]"
             >
               The Ultimate Done-For-
               <br />
@@ -68,7 +68,7 @@ export default function GrowSaasSolution() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: 0.2 }}
-              className="mt-6 max-w-[650px] text-lg leading-relaxed text-slate-600"
+              className="mt-4 max-w-[650px] text-sm sm:text-base md:text-lg leading-relaxed text-slate-600"
             >
               We step in as your technical backend. From designing custom
               snapshots to handling 24/7 white-label support, we ensure your
@@ -90,9 +90,9 @@ export default function GrowSaasSolution() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.4 + i * 0.08 }}
-                  className="flex items-center gap-3 text-lg font-medium text-[#0F172A]"
+                  className="flex items-center gap-2 sm:gap-3 text-sm sm:text-base md:text-lg font-medium text-[#0F172A]"
                 >
-                  <CheckCircle2 className="h-6 w-6 shrink-0 text-emerald-500" />
+                  <CheckCircle2 className="h-5 w-5 shrink-0 text-emerald-500 sm:h-6 sm:w-6" />
                   {item}
                 </motion.li>
               ))}
@@ -110,7 +110,7 @@ export default function GrowSaasSolution() {
                 href="/contact"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.97 }}
-                className="group relative inline-flex items-center gap-3 overflow-hidden rounded-full bg-[linear-gradient(135deg,#22c55e,#06b6d4,#3b82f6)] px-10 py-4 text-base font-semibold text-white shadow-[0_0_40px_rgba(34,197,94,0.3)] transition-all duration-300 hover:shadow-[0_0_60px_rgba(34,197,94,0.5)]"
+                className="group relative inline-flex items-center gap-2 sm:gap-3 overflow-hidden rounded-full bg-[linear-gradient(135deg,#22c55e,#06b6d4,#3b82f6)] px-5 py-2.5 text-sm sm:text-base font-semibold text-white shadow-[0_0_40px_rgba(34,197,94,0.3)] transition-all duration-300 hover:shadow-[0_0_60px_rgba(34,197,94,0.5)] sm:px-6 sm:py-3 md:px-10 md:py-4"
               >
                 <span className="absolute inset-0 bg-[linear-gradient(135deg,#22c55e,#34d399,#3b82f6)] bg-[length:200%_auto] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                 <span className="relative z-10">Get Started Today</span>
@@ -124,11 +124,11 @@ export default function GrowSaasSolution() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="rounded-[28px] border border-slate-200 bg-white p-8 shadow-xl"
+            className="rounded-2xl sm:rounded-[28px] border border-slate-200 bg-white p-5 sm:p-6 md:p-8 shadow-xl"
           >
             {/* Card Header */}
             <div className="flex items-center gap-4">
-              <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-50">
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-emerald-100 bg-emerald-50 transition-all duration-300 sm:h-12 sm:w-12 md:h-14 md:w-14">
                 <Rocket className="h-7 w-7 text-emerald-600" />
               </div>
               <div>

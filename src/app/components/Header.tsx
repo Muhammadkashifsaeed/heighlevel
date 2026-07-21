@@ -31,10 +31,10 @@ export default function Header() {
 
   return (
     <header
-      className="fixed top-0 left-0 right-0 z-50 w-full"
+      className="fixed top-4 left-4 right-4 z-50 w-auto sm:left-6 sm:right-6"
     >
       <div
-        className={`mx-auto flex h-16 max-w-7xl items-center justify-between gap-6 rounded-full border border-border px-4 shadow-sm transition-all duration-300 sm:px-6 sm:backdrop-blur-md ${
+        className={`mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 rounded-full border border-border px-4 shadow-sm transition-all duration-300 sm:px-6 sm:backdrop-blur-md ${
           scrolled ? "bg-white" : "bg-white sm:bg-card/70"
         }`}
       >
@@ -82,8 +82,8 @@ export default function Header() {
 
         {/* Mobile menu */}
         {menuOpen && (
-          <div className="absolute top-full left-0 right-0 mt-2 mx-4 rounded-3xl border border-slate-200 bg-white p-6 shadow-xl lg:hidden z-50">
-            <nav className="flex flex-col gap-4">
+          <div className="absolute top-full left-4 right-4 mt-2 rounded-3xl border border-slate-200 bg-white p-4 shadow-xl sm:left-6 sm:right-6 lg:hidden z-50 max-h-[80vh] overflow-y-auto">
+            <nav className="flex flex-col gap-3">
               {navLinks.map((link) => {
                 const active = pathname === link.href;
                 return (
@@ -91,8 +91,8 @@ export default function Header() {
                     key={link.href}
                     href={link.href}
                     onClick={() => setMenuOpen(false)}
-                    className={`text-sm font-medium transition-colors ${
-                      active ? "text-emerald-600" : "text-slate-600 hover:text-slate-900"
+                    className={`text-base font-medium transition-colors py-2 px-3 rounded-xl ${
+                      active ? "text-emerald-600 bg-emerald-50" : "text-slate-600 hover:text-slate-900 hover:bg-slate-50"
                     }`}
                   >
                     {link.label}

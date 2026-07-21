@@ -50,7 +50,7 @@ const cardVariants = {
 
 export default function GrowSaasFeatures() {
   return (
-    <section className="relative overflow-hidden bg-white py-24 sm:py-32">
+    <section className="relative overflow-hidden bg-white py-12 sm:py-16 md:py-24">
       {/* Background glows */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -right-32 -top-32 h-[500px] w-[500px] rounded-full bg-emerald-200/40 blur-[140px]" />
@@ -78,7 +78,7 @@ export default function GrowSaasFeatures() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="mx-auto max-w-4xl text-center text-4xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-5xl md:text-6xl lg:text-[72px]"
+          className="mx-auto max-w-4xl text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[72px] font-extrabold leading-tight tracking-tight text-slate-900"
         >
           Everything You Need To{" "}
           <span className="bg-[linear-gradient(90deg,#22c55e,#34d399,#06b6d4)] bg-clip-text text-transparent drop-shadow-[0_0_25px_rgba(34,197,94,0.25)]">
@@ -92,7 +92,7 @@ export default function GrowSaasFeatures() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="mx-auto mt-6 max-w-[850px] text-center text-lg leading-relaxed text-slate-600 sm:text-xl"
+          className="mx-auto mt-4 max-w-[850px] text-center text-sm sm:text-base md:text-lg leading-relaxed text-slate-600"
         >
           We don&apos;t just set up an account. We engineer a complete,
           high-converting software business designed for rapid growth. From
@@ -101,7 +101,7 @@ export default function GrowSaasFeatures() {
         </motion.p>
 
         {/* FEATURE GRID */}
-        <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid grid-cols-1 gap-4 sm:gap-6 md:gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, i) => (
             <motion.div
               key={feature.num}
@@ -115,15 +115,15 @@ export default function GrowSaasFeatures() {
                 borderColor: "rgba(52, 211, 153, 0.5)",
                 boxShadow: "0 20px 40px -12px rgba(16, 185, 129, 0.15)",
               }}
-              className="group relative flex flex-col rounded-[24px] border border-slate-200 bg-white p-8 shadow-sm transition-all duration-300 hover:border-emerald-300 hover:shadow-xl"
+              className="group relative flex flex-col rounded-2xl sm:rounded-[28px] border border-slate-200 bg-white p-5 sm:p-6 md:p-8 shadow-sm transition-all duration-300 hover:border-emerald-300 hover:shadow-xl"
             >
               {/* Number */}
-              <span className="text-5xl font-bold text-slate-200 transition-colors duration-300 group-hover:text-emerald-200">
+              <span className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-200 transition-colors duration-300 group-hover:text-emerald-200">
                 {feature.num}
               </span>
 
               {/* Content */}
-              <h3 className="mt-4 text-lg font-bold text-slate-900">
+              <h3 className="mt-3 sm:mt-4 text-base sm:text-lg md:text-xl font-bold text-slate-900">
                 {feature.title}
               </h3>
               <p className="mt-3 text-sm leading-relaxed text-slate-600">

@@ -82,33 +82,33 @@ export default function HowWeWork() {
           </p>
         </div>
 
-        {/* 6 BOXES IN ONE ROW WITH DIVIDERS */}
-        <div className="mt-14 flex items-stretch justify-center">
+        {/* 6 BOXES - responsive grid */}
+        <div className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-6">
           {steps.map((step, idx) => {
             const { Icon, accent, title, body, divider } = step;
             return (
               <div
                 key={title}
-                className="group relative flex w-64 flex-col items-center rounded-3xl border border-slate-200 bg-white p-6 text-center shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-green-500 hover:bg-green-50/50 hover:shadow-lg"
+                className="group relative flex flex-col items-center rounded-3xl border border-slate-200 bg-white p-5 text-center shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-green-500 hover:bg-green-50/50 hover:shadow-lg"
               >
                 {/* Golden dot at top center on hover */}
                 <span className="pointer-events-none absolute -top-3 left-1/2 -translate-x-1/2 h-4 w-4 rounded-full bg-amber-400 opacity-0 shadow-md transition-opacity duration-300 group-hover:opacity-100" />
 
                 <span
-                  className={`flex h-12 w-12 items-center justify-center rounded-2xl ${accent} transition-transform duration-300 group-hover:scale-110`}
+                  className={`flex h-10 w-10 items-center justify-center rounded-2xl ${accent} transition-transform duration-300 group-hover:scale-110`}
                 >
-                  <Icon className="h-6 w-6" />
+                  <Icon className="h-5 w-5" />
                 </span>
-                <h3 className="mt-4 text-base font-bold text-slate-900">
+                <h3 className="mt-3 text-sm font-bold text-slate-900">
                   {title}
                 </h3>
                 <p className="mt-2 text-xs leading-5 text-slate-600">
                   {body}
                 </p>
 
-                {/* Vertical divider between boxes */}
+                {/* Vertical divider between boxes - hidden on mobile/tablet */}
                 {idx < steps.length - 1 && (
-                  <span className={`absolute -right-2.5 top-1/2 h-12 w-1 -translate-y-1/2 rounded-full ${divider} opacity-60`} />
+                  <span className={`hidden lg:block absolute -right-2.5 top-1/2 h-12 w-1 -translate-y-1/2 rounded-full ${divider} opacity-60`} />
                 )}
               </div>
             );

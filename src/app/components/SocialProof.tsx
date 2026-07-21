@@ -39,7 +39,7 @@ const cardVariants = {
 
 export default function SocialProof() {
   return (
-    <section className="relative overflow-hidden bg-[#050505] py-24 sm:py-32">
+    <section className="relative overflow-hidden bg-[#050505] py-16 sm:py-24 md:py-32">
       {/* Background layers */}
       <div className="absolute inset-0">
         <div
@@ -134,7 +134,7 @@ export default function SocialProof() {
                 borderColor: "rgba(52, 211, 153, 0.5)",
                 boxShadow: "0 20px 40px -12px rgba(16, 185, 129, 0.2)",
               }}
-              className="group flex flex-col rounded-[28px] border border-white/10 bg-white/5 p-8 shadow-sm backdrop-blur-md transition-all duration-300 hover:border-emerald-300/50 hover:bg-white/10 hover:shadow-2xl"
+              className="group flex flex-col rounded-[24px] border border-white/10 bg-white/5 p-6 shadow-sm backdrop-blur-md transition-all duration-300 hover:border-emerald-300/50 hover:bg-white/10 hover:shadow-2xl sm:p-8"
             >
               {/* Stars */}
               <div className="flex gap-1">

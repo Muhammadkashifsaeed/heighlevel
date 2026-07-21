@@ -24,7 +24,7 @@ const services = [
 
 export default function AutomationServiceDetails() {
   return (
-    <section className="relative overflow-hidden bg-white py-12 md:py-16">
+    <section className="relative overflow-hidden bg-white py-8 md:py-12">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(52,211,153,0.10)_0%,transparent_55%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(59,130,246,0.10)_0%,transparent_55%)]" />
 
@@ -36,14 +36,14 @@ export default function AutomationServiceDetails() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: idx * 0.1 }}
-            className="relative overflow-hidden rounded-[32px] border border-slate-200 bg-white/80 shadow-[0_30px_80px_rgba(15,23,42,0.08)] backdrop-blur-xl"
+            className="relative overflow-hidden rounded-[24px] border border-slate-200 bg-white/80 shadow-[0_30px_80px_rgba(15,23,42,0.08)] backdrop-blur-xl sm:rounded-[32px]"
           >
-            <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-              <div className="relative order-2 flex items-center justify-center p-6 md:p-10 lg:p-12 lg:order-1">
+            <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+              <div className="relative order-2 flex items-center justify-center p-5 md:p-8 lg:p-12 lg:order-1">
                 <motion.div
                   animate={{ y: [0, -14, 0] }}
                   transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
-                  className="relative flex h-52 w-52 items-center justify-center md:h-60 md:w-60"
+                  className="relative flex h-40 w-40 items-center justify-center md:h-52 md:w-52 lg:h-60 lg:w-60"
                 >
                   <motion.div
                     animate={{ rotate: 360 }}

@@ -5,7 +5,7 @@ import { Search } from "lucide-react";
 
 export default function BlogHero() {
   return (
-    <section className="relative overflow-hidden bg-white py-24 sm:py-32">
+    <section className="relative overflow-hidden bg-white py-12 sm:py-16 md:py-24">
       {/* Background glows */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute left-1/2 top-[30%] h-[400px] w-[400px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-emerald-200/50 blur-[140px]" />
@@ -33,7 +33,7 @@ export default function BlogHero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="text-4xl font-extrabold leading-[1.05] tracking-tight text-[#111111] sm:text-5xl md:text-6xl lg:text-[64px]"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[64px] font-extrabold leading-[1.05] tracking-tight text-[#111111]"
           >
             Latest Automation
             <br />
@@ -47,7 +47,7 @@ export default function BlogHero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="mx-auto mt-7 max-w-[760px] text-xl leading-[1.7] text-[#6B7280] sm:text-[22px]"
+            className="mx-auto mt-4 max-w-[760px] text-sm sm:text-base md:text-lg leading-[1.7] text-[#6B7280]"
           >
             Explore practical tutorials, automation tips, CRM strategies, and
             growth-focused guides to help you scale your agency without the
@@ -59,14 +59,14 @@ export default function BlogHero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.3 }}
-            className="mt-12 w-full max-w-[580px]"
+            className="mt-8 sm:mt-10 md:mt-12 w-full max-w-[580px]"
           >
-            <div className="relative flex items-center rounded-[18px] border border-slate-200 bg-white px-5 py-4 shadow-sm transition-all duration-300 hover:border-emerald-400 hover:shadow-[0_0_30px_rgba(16,185,129,0.15)] focus-within:border-emerald-400 focus-within:shadow-[0_0_0_3px_rgba(34,211,166,0.2)]">
+            <div className="relative flex items-center rounded-2xl sm:rounded-[18px] border border-slate-200 bg-white px-4 py-2.5 sm:px-5 sm:py-3 md:py-4 shadow-sm transition-all duration-300 hover:border-emerald-400 hover:shadow-[0_0_30px_rgba(16,185,129,0.15)] focus-within:border-emerald-400 focus-within:shadow-[0_0_0_3px_rgba(34,211,166,0.2)]">
               <Search className="h-5 w-5 shrink-0 text-[#9CA3AF]" />
               <input
                 type="text"
                 placeholder="Search guides, tutorials, and insights..."
-                className="ml-3 w-full bg-transparent text-[17px] text-[#111111] placeholder-[#9CA3AF] outline-none"
+                className="ml-2 sm:ml-3 w-full bg-transparent text-sm sm:text-base md:text-[17px] text-[#111111] placeholder-[#9CA3AF] outline-none"
               />
             </div>
           </motion.div>

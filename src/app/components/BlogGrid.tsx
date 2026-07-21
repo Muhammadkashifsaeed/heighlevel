@@ -115,38 +115,38 @@ export default function BlogGrid() {
               whileHover={{ y: -10 }}
               className="group flex flex-col overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:border-slate-300 hover:shadow-xl"
             >
-              {/* Image */}
-              <div className="h-[260px] w-full overflow-hidden bg-slate-100">
-                <img
-                  src={blog.image}
-                  alt={blog.title}
-                  className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-              </div>
+               {/* Image */}
+               <div className="h-48 w-full overflow-hidden bg-slate-100 sm:h-[260px]">
+                 <img
+                   src={blog.image}
+                   alt={blog.title}
+                   className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                 />
+               </div>
 
-              {/* Content */}
-              <div className="flex flex-1 flex-col p-7">
-                {/* Meta */}
-                <span className="text-sm font-medium text-[#9CA3AF]">
-                  {blog.date} · {blog.readTime}
-                </span>
+               {/* Content */}
+               <div className="flex flex-1 flex-col p-5 sm:p-7">
+                 {/* Meta */}
+                 <span className="text-xs font-medium text-[#9CA3AF] sm:text-sm">
+                   {blog.date} · {blog.readTime}
+                 </span>
 
-                {/* Title */}
-                <h3 className="mt-3 text-[34px] font-extrabold leading-tight text-[#111111] line-clamp-2">
-                  {blog.title}
-                </h3>
+                 {/* Title */}
+                 <h3 className="mt-2 text-xl font-extrabold leading-tight text-[#111111] line-clamp-2 sm:text-[34px]">
+                   {blog.title}
+                 </h3>
 
-                {/* Description */}
-                <p className="mt-3 flex-1 text-lg leading-[1.8] text-[#6B7280] line-clamp-3">
-                  {blog.description}
-                </p>
+                 {/* Description */}
+                 <p className="mt-2 flex-1 text-base leading-[1.7] text-[#6B7280] line-clamp-3 sm:text-lg">
+                   {blog.description}
+                 </p>
 
-                {/* Read More */}
-                <span className="mt-4 inline-flex items-center gap-2 text-lg font-bold text-[#22D3A6] transition-all duration-300 group-hover:gap-3">
-                  Read Article
-                  <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1.5" />
-                </span>
-              </div>
+                 {/* Read More */}
+                 <span className="mt-3 inline-flex items-center gap-2 text-base font-bold text-[#22D3A6] transition-all duration-300 group-hover:gap-3 sm:text-lg">
+                   Read Article
+                   <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1.5 sm:h-5 sm:w-5" />
+                 </span>
+               </div>
             </motion.div>
           ))}
         </div>

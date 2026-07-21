@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function HireExpertCTA() {
   return (
-    <section className="relative overflow-hidden bg-white py-24 sm:py-32">
+    <section className="relative overflow-hidden bg-white py-12 sm:py-16 md:py-24">
       {/* Background glows */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -left-32 -top-32 h-[500px] w-[500px] rounded-full bg-emerald-200/40 blur-[140px]" />
@@ -22,7 +22,7 @@ export default function HireExpertCTA() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="text-4xl font-extrabold leading-tight tracking-tight text-[#0F172A] sm:text-5xl md:text-6xl"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold leading-tight tracking-tight text-[#0F172A]"
           >
             Ready to scale your Business?
           </motion.h2>
@@ -37,11 +37,11 @@ export default function HireExpertCTA() {
           >
             <Link
               href="/contact"
-              className="group relative inline-flex items-center gap-3 overflow-hidden rounded-full bg-[linear-gradient(135deg,#22c55e,#06b6d4,#3b82f6)] px-10 py-4 text-base font-semibold text-white shadow-[0_0_40px_rgba(34,197,94,0.3)] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_60px_rgba(34,197,94,0.5)]"
+              className="group relative inline-flex items-center gap-2 sm:gap-3 overflow-hidden rounded-full bg-[linear-gradient(135deg,#22c55e,#06b6d4,#3b82f6)] px-5 py-2.5 text-sm sm:text-base font-semibold text-white shadow-[0_0_40px_rgba(34,197,94,0.3)] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_60px_rgba(34,197,94,0.5)] sm:px-6 sm:py-3 md:px-10 md:py-4"
             >
               <span className="absolute inset-0 bg-[linear-gradient(135deg,#22c55e,#34d399,#3b82f6)] bg-[length:200%_auto] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
               <span className="relative z-10">Get Matched With An Expert</span>
-              <ArrowRight className="relative z-10 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+              <ArrowRight className="relative z-10 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1 sm:h-5 sm:w-5" />
             </Link>
           </motion.div>
         </div>

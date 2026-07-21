@@ -60,17 +60,17 @@ export default function Footer() {
     <footer className="bg-black text-white">
       {/* CTA BANNER */}
       <section className="border-b border-white/10 bg-black">
-        <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 px-6 py-16 text-center">
-          <span className="flex h-16 w-16 items-center justify-center rounded-full border-2 border-green-500 text-4xl font-bold text-green-500">
+        <div className="mx-auto flex max-w-6xl flex-col items-center gap-5 px-6 py-12 text-center sm:gap-6 sm:py-16">
+          <span className="flex h-12 w-12 items-center justify-center rounded-full border-2 border-green-500 text-2xl font-bold text-green-500 sm:h-16 sm:w-16 sm:text-4xl">
             $
           </span>
-          <h2 className="max-w-3xl text-3xl font-bold leading-tight tracking-tight sm:text-4xl">
+          <h2 className="max-w-3xl text-2xl font-bold leading-tight tracking-tight sm:text-3xl sm:text-4xl">
             Ready to Build the Business You{" "}
             <span className="bg-[linear-gradient(90deg,#22c55e,#3b82f6,#fde047)] bg-[length:200%_auto] bg-clip-text text-transparent animate-[gradient_4s_linear_infinite]">
               Actually Envisioned?
             </span>
           </h2>
-          <p className="max-w-2xl text-base leading-7 text-slate-300">
+          <p className="max-w-2xl text-sm leading-7 text-slate-300 sm:text-base">
             Stop wasting time on broken systems and underqualified help. As your
             trusted partner, DigiStartup is the team that builds, automates,
             and scales your business the right way — starting today.
@@ -85,7 +85,7 @@ export default function Footer() {
               const rect = e.currentTarget.getBoundingClientRect();
               setBtn(e.clientX < rect.left + rect.width / 2 ? "red" : "default");
             }}
-            className={`group inline-flex items-center gap-2 rounded-full px-7 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-900/40 transition-all duration-300 hover:scale-105 hover:shadow-xl ${
+            className={`group inline-flex items-center gap-2 rounded-full px-6 py-2.5 text-sm font-semibold text-white shadow-lg shadow-blue-900/40 transition-all duration-300 hover:scale-105 hover:shadow-xl sm:px-7 sm:py-3 ${
               btn === "green"
                 ? "bg-green-500 hover:bg-green-600"
                 : btn === "red"
@@ -104,8 +104,8 @@ export default function Footer() {
       </section>
 
       {/* MAIN FOOTER */}
-      <div className="mx-auto max-w-6xl px-6 py-14">
-        <div className="grid grid-cols-1 gap-10 text-center sm:grid-cols-2 sm:text-left lg:grid-cols-4">
+      <div className="mx-auto max-w-6xl px-6 py-10 sm:py-14">
+        <div className="grid grid-cols-1 gap-8 text-center sm:grid-cols-2 sm:text-left lg:grid-cols-4">
           {/* Column 1 - Brand */}
           <div className="flex flex-col items-center gap-4 sm:items-start">
             <Link href="/" className="flex items-center">

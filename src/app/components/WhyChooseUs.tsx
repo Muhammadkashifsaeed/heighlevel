@@ -80,21 +80,21 @@ export default function WhyChooseUs() {
   }, []);
 
   return (
-    <section className="bg-white py-20">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 lg:grid-cols-2">
+    <section className="bg-white py-12 sm:py-20">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-8 px-6 lg:grid-cols-2 lg:gap-12">
         {/* LEFT */}
         <div>
-          <span className="rounded-full bg-blue-50 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-blue-600">
+          <span className="rounded-full bg-blue-50 px-3 py-1 text-xs font-bold uppercase tracking-widest text-blue-600 sm:px-4 sm:py-1.5 sm:text-sm">
             Why Choose Us
           </span>
-          <h2 className="mt-5 text-4xl font-bold leading-tight tracking-tight text-slate-900 sm:text-5xl">
+          <h2 className="mt-4 text-3xl font-bold leading-tight tracking-tight text-slate-900 sm:text-4xl sm:mt-5 lg:text-5xl">
             Grow Your Business With{" "}
             <span className="bg-[linear-gradient(90deg,#22c55e,#3b82f6,#eab308)] bg-[length:200%_auto] bg-clip-text text-transparent animate-[gradient_5s_linear_infinite]">
               Digital Marketing
             </span>{" "}
             Experts.
           </h2>
-          <p className="mt-6 max-w-xl text-base leading-7 text-slate-600">
+          <p className="mt-4 max-w-xl text-sm leading-7 text-slate-600 sm:mt-6 sm:text-base">
             We help businesses achieve sustainable growth through innovative
             digital solutions. From SEO and Web Development to Branding, UI/UX
             Design, and Performance Marketing, our expert team delivers
@@ -102,11 +102,11 @@ export default function WhyChooseUs() {
             leads, and drive long-term success.
           </p>
 
-          <ul className="mt-8 grid grid-cols-1 gap-3">
+          <ul className="mt-6 grid grid-cols-1 gap-2 sm:mt-8 sm:gap-3">
             {features.map((f) => (
-              <li key={f} className="group flex items-start gap-2 text-sm text-slate-700">
-                <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-slate-200 text-slate-400 transition-colors duration-300 group-hover:bg-green-500 group-hover:text-white">
-                  <Check className="h-3 w-3" />
+              <li key={f} className="group flex items-start gap-2 text-xs text-slate-700 sm:text-sm">
+                <span className="mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-slate-200 text-slate-400 transition-colors duration-300 group-hover:bg-green-500 group-hover:text-white sm:h-5 sm:w-5">
+                  <Check className="h-2.5 w-2.5 sm:h-3 sm:w-3" />
                 </span>
                 {f}
               </li>
@@ -115,16 +115,16 @@ export default function WhyChooseUs() {
 
           <Link
             href="/contact"
-            className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-blue-600 px-7 py-3 text-sm font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-blue-700"
+            className="mt-6 inline-flex items-center justify-center gap-2 rounded-full bg-blue-600 px-6 py-2.5 text-sm font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-blue-700 sm:mt-8 sm:px-7 sm:py-3"
           >
             Get Started Today
-            <ArrowRight className="h-4 w-4" />
+            <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
           </Link>
         </div>
 
         {/* RIGHT - PREMIUM DASHBOARD */}
         <div className="flex justify-center">
-          <div className="relative w-full max-w-md h-[520px] overflow-hidden animate-[float_6s_ease-in-out_infinite] rounded-3xl border border-white/10 bg-slate-900/70 p-3 shadow-2xl backdrop-blur-xl">
+          <div className="relative w-full max-w-md h-[400px] overflow-hidden animate-[float_6s_ease-in-out_infinite] rounded-3xl border border-white/10 bg-slate-900/70 p-2.5 shadow-2xl backdrop-blur-xl sm:h-[520px] sm:p-3">
             <div
               className="pointer-events-none absolute inset-0 rounded-3xl opacity-[0.07]"
               style={{

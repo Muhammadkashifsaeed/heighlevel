@@ -71,34 +71,34 @@ const services = [
 
 export default function ServicesGrid() {
   return (
-    <section className="bg-white py-20">
+    <section className="bg-white py-12 sm:py-20">
       <div className="mx-auto max-w-7xl px-6">
         <div className="text-center">
-          <span className="rounded-full bg-slate-100 px-5 py-1.5 text-sm font-semibold uppercase tracking-widest text-blue-600">
+          <span className="rounded-full bg-slate-100 px-4 py-1 text-xs font-semibold uppercase tracking-widest text-blue-600 sm:px-5 sm:py-1.5 sm:text-sm">
             Explore Our
           </span>
-          <h2 className="mt-4 text-3xl font-bold leading-tight tracking-tight text-slate-900 sm:text-4xl">
+          <h2 className="mt-3 text-2xl font-bold leading-tight tracking-tight text-slate-900 sm:mt-4 sm:text-3xl sm:text-4xl">
             Core{" "}
             <span className="text-green-600">Services</span>
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-slate-600">
+          <p className="mx-auto mt-3 max-w-2xl text-sm leading-7 text-slate-600 sm:mt-4 sm:text-base">
             Select a service below to jump to its full details and features.
           </p>
         </div>
 
-        <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           {services.map(({ Icon, color, title, desc }) => (
             <div
               key={title}
-              className="group flex flex-col items-start rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-500 hover:shadow-md"
+              className="group flex flex-col items-start rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-500 hover:shadow-md sm:rounded-3xl sm:p-7"
             >
               <span
-                className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl transition-transform duration-300 group-hover:scale-110 ${color}`}
+                className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-xl transition-transform duration-300 group-hover:scale-110 sm:h-14 sm:w-14 sm:rounded-2xl ${color}`}
               >
-                <Icon className="h-7 w-7" />
+                <Icon className="h-6 w-6 sm:h-7 sm:w-7" />
               </span>
-              <h3 className="mt-5 text-lg font-bold text-slate-900">{title}</h3>
-              <p className="mt-3 text-sm leading-6 text-slate-600">{desc}</p>
+              <h3 className="mt-3 text-base font-bold text-slate-900 sm:mt-5 sm:text-lg">{title}</h3>
+              <p className="mt-2 text-sm leading-6 text-slate-600">{desc}</p>
             </div>
           ))}
         </div>

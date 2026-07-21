@@ -39,7 +39,7 @@ const cardVariants = {
 
 export default function GrowSaasProblems() {
   return (
-    <section className="relative overflow-hidden bg-[#050505] py-24 sm:py-32">
+    <section className="relative overflow-hidden bg-[#050505] py-12 sm:py-16 md:py-24">
       {/* Background layers */}
       <div className="absolute inset-0">
         <div
@@ -85,7 +85,7 @@ export default function GrowSaasProblems() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="mx-auto max-w-4xl text-center text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-5xl md:text-6xl lg:text-[72px]"
+          className="mx-auto max-w-4xl text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[72px] font-extrabold leading-tight tracking-tight text-white"
         >
           Running a SaaS is Hard.{" "}
           <span className="bg-[linear-gradient(90deg,#22c55e,#34d399)] bg-clip-text text-transparent drop-shadow-[0_0_25px_rgba(34,197,94,0.25)]">
@@ -99,7 +99,7 @@ export default function GrowSaasProblems() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="mx-auto mt-6 max-w-[850px] text-center text-lg leading-relaxed text-neutral-400 sm:text-xl"
+          className="mx-auto mt-4 max-w-[850px] text-center text-sm sm:text-base md:text-lg leading-relaxed text-neutral-400"
         >
           Most agency owners hit a ceiling because they get overwhelmed with
           technical operations, onboarding, and client support instead of
@@ -107,7 +107,7 @@ export default function GrowSaasProblems() {
         </motion.p>
 
         {/* CARDS GRID */}
-        <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid grid-cols-1 gap-4 sm:gap-6 md:gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {problems.map((problem, i) => (
             <motion.div
               key={problem.num}
@@ -121,20 +121,20 @@ export default function GrowSaasProblems() {
                 borderColor: "rgba(52, 211, 153, 0.5)",
                 boxShadow: "0 20px 40px -12px rgba(16, 185, 129, 0.2)",
               }}
-              className="group flex flex-col rounded-[28px] border border-white/10 bg-white/5 p-8 shadow-sm backdrop-blur-md transition-all duration-300 hover:border-emerald-300/50 hover:bg-white/10 hover:shadow-2xl"
+              className="group flex flex-col rounded-2xl sm:rounded-[28px] border border-white/10 bg-white/5 p-5 sm:p-6 md:p-8 shadow-sm backdrop-blur-md transition-all duration-300 hover:border-emerald-300/50 hover:bg-white/10 hover:shadow-2xl"
             >
               {/* Icon */}
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-white/5 shadow-lg transition-all duration-300 group-hover:border-emerald-400/40 group-hover:shadow-[0_0_20px_rgba(16,185,129,0.3)] group-hover:-translate-y-1">
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/5 shadow-lg transition-all duration-300 group-hover:border-emerald-400/40 group-hover:shadow-[0_0_20px_rgba(16,185,129,0.3)] group-hover:-translate-y-1 sm:h-12 sm:w-12">
                 <problem.Icon className="h-6 w-6 text-emerald-400 transition-all duration-300 group-hover:text-emerald-300 group-hover:drop-shadow-[0_0_8px_rgba(52,211,153,0.6)]" />
               </div>
 
               {/* Number */}
-              <span className="mt-6 text-5xl font-bold text-white/10 transition-colors duration-300 group-hover:text-emerald-200/30">
+              <span className="mt-4 sm:mt-6 text-3xl sm:text-4xl md:text-5xl font-bold text-white/10 transition-colors duration-300 group-hover:text-emerald-200/30">
                 {problem.num}
               </span>
 
               {/* Content */}
-              <h3 className="mt-4 text-xl font-bold text-white">{problem.title}</h3>
+              <h3 className="mt-3 sm:mt-4 text-base sm:text-lg md:text-xl font-bold text-white">{problem.title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-neutral-400">
                 {problem.desc}
               </p>

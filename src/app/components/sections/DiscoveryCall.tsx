@@ -159,7 +159,7 @@ export default function DiscoveryCall() {
   }, [firstDay, daysInMonth, currentMonth, currentYear, selectedDay]);
 
   return (
-    <section className="bg-white py-20 sm:py-24">
+    <section className="bg-white py-12 sm:py-20 md:py-24">
       <div className="mx-auto max-w-[1200px] px-6">
         <div className="flex flex-col items-center text-center">
           {/* Label */}
@@ -168,7 +168,7 @@ export default function DiscoveryCall() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-sm font-semibold uppercase tracking-[4px] text-[#22D3A6]"
+            className="text-xs font-semibold uppercase tracking-[3px] text-[#22D3A6] sm:text-sm sm:tracking-[4px]"
           >
             Discovery Call
           </motion.span>
@@ -179,7 +179,7 @@ export default function DiscoveryCall() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="mt-4 text-4xl font-extrabold leading-tight tracking-tight text-[#111111] sm:text-5xl md:text-[48px]"
+            className="mt-3 text-3xl font-extrabold leading-tight tracking-tight text-[#111111] sm:text-4xl md:text-5xl lg:text-[48px]"
           >
             Let&apos;s Build Your{" "}
             <span className="bg-[linear-gradient(90deg,#22c55e,#3b82f6)] bg-clip-text text-transparent">
@@ -193,7 +193,7 @@ export default function DiscoveryCall() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="mx-auto mt-5 max-w-[640px] text-lg leading-[1.7] text-[#6B7280] sm:text-xl"
+            className="mx-auto mt-4 max-w-[640px] text-base leading-[1.7] text-[#6B7280] sm:text-lg sm:text-xl"
           >
             Choose a time below to speak with our experts about scaling your
             business with custom automation and systems.
@@ -201,7 +201,7 @@ export default function DiscoveryCall() {
         </div>
 
         {/* Two Column Layout */}
-        <div className="mt-12 grid grid-cols-1 gap-8 lg:grid-cols-2">
+        <div className="mt-10 grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-8">
           {/* LEFT SIDE */}
           <div className="flex flex-col gap-8">
             {/* Contact Information */}
@@ -210,59 +210,59 @@ export default function DiscoveryCall() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: 0.3 }}
-              className="rounded-3xl border border-slate-200 bg-white p-8 shadow-xl"
+              className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xl sm:rounded-3xl sm:p-8"
             >
-              <h3 className="text-2xl font-extrabold text-[#111111]">
+              <h3 className="text-xl font-extrabold text-[#111111] sm:text-2xl">
                 Contact Information
               </h3>
-              <p className="mt-2 text-base text-[#6B7280]">
+              <p className="mt-1.5 text-sm text-[#6B7280] sm:mt-2 sm:text-base">
                 Reach out to us directly or book a call using the calendar.
               </p>
 
-              <div className="mt-8 space-y-6">
+              <div className="mt-6 space-y-5 sm:mt-8 sm:space-y-6">
                 {/* Email */}
-                <div className="flex items-start gap-4">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-emerald-50">
-                    <Mail className="h-6 w-6 text-emerald-600" />
+                <div className="flex items-start gap-3 sm:gap-4">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-emerald-50 sm:h-12 sm:w-12 sm:rounded-2xl">
+                    <Mail className="h-5 w-5 text-emerald-600 sm:h-6 sm:w-6" />
                   </div>
                   <div>
-                    <p className="text-sm font-semibold uppercase tracking-wider text-[#6B7280]">
+                    <p className="text-xs font-semibold uppercase tracking-wider text-[#6B7280] sm:text-sm">
                       Email Us
                     </p>
-                    <p className="mt-1 text-lg font-bold text-[#111111]">
+                    <p className="mt-0.5 text-base font-bold text-[#111111] sm:text-lg">
                       info@digistartupgroup.com
                     </p>
                   </div>
                 </div>
 
                 {/* Working Hours */}
-                <div className="flex items-start gap-4">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-blue-50">
-                    <Clock className="h-6 w-6 text-blue-600" />
+                <div className="flex items-start gap-3 sm:gap-4">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-blue-50 sm:h-12 sm:w-12 sm:rounded-2xl">
+                    <Clock className="h-5 w-5 text-blue-600 sm:h-6 sm:w-6" />
                   </div>
                   <div>
-                    <p className="text-sm font-semibold uppercase tracking-wider text-[#6B7280]">
+                    <p className="text-xs font-semibold uppercase tracking-wider text-[#6B7280] sm:text-sm">
                       Working Hours
                     </p>
-                    <p className="mt-1 text-lg font-bold text-[#111111]">
+                    <p className="mt-0.5 text-base font-bold text-[#111111] sm:text-lg">
                       Mon - Fri, 3:00 PM - 12:00 AM (PKT)
                     </p>
                   </div>
                 </div>
 
                 {/* Location */}
-                <div className="flex items-start gap-4">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-yellow-50">
-                    <MapPin className="h-6 w-6 text-yellow-600" />
+                <div className="flex items-start gap-3 sm:gap-4">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-yellow-50 sm:h-12 sm:w-12 sm:rounded-2xl">
+                    <MapPin className="h-5 w-5 text-yellow-600 sm:h-6 sm:w-6" />
                   </div>
                   <div>
-                    <p className="text-sm font-semibold uppercase tracking-wider text-[#6B7280]">
+                    <p className="text-xs font-semibold uppercase tracking-wider text-[#6B7280] sm:text-sm">
                       Location
                     </p>
-                    <p className="mt-1 text-lg font-bold text-[#111111]">
+                    <p className="mt-0.5 text-base font-bold text-[#111111] sm:text-lg">
                       Pakistan
                     </p>
-                    <p className="mt-1 text-base text-[#6B7280]">
+                    <p className="mt-0.5 text-sm text-[#6B7280] sm:text-base">
                       Office # 25, Shoukat Commercial Center, Bahawalpur Rd, above HBL Bank, Multan, 66000
                     </p>
                   </div>
@@ -276,12 +276,12 @@ export default function DiscoveryCall() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: 0.4 }}
-              className="rounded-3xl border border-slate-200 bg-white p-8 shadow-xl"
+              className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xl sm:rounded-3xl sm:p-8"
             >
-              <h3 className="text-2xl font-extrabold text-[#111111]">
+              <h3 className="text-xl font-extrabold text-[#111111] sm:text-2xl">
                 Connect With Us
               </h3>
-              <div className="mt-6 flex gap-4">
+              <div className="mt-4 flex gap-3 sm:gap-4">
                 {socials.map(({ Icon, href, label }) => (
                   <a
                     key={label}
@@ -289,9 +289,9 @@ export default function DiscoveryCall() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={label}
-                    className="flex h-12 w-12 items-center justify-center rounded-2xl border border-slate-200 bg-slate-50 text-slate-600 transition-all duration-300 hover:border-blue-500 hover:bg-blue-50 hover:text-blue-600"
+                    className="flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200 bg-slate-50 text-slate-600 transition-all duration-300 hover:border-blue-500 hover:bg-blue-50 hover:text-blue-600 sm:h-12 sm:w-12 sm:rounded-2xl"
                   >
-                    <Icon className="h-5 w-5" />
+                    <Icon className="h-4 w-4 sm:h-5 sm:w-5" />
                   </a>
                 ))}
               </div>
@@ -303,7 +303,7 @@ export default function DiscoveryCall() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: 0.5 }}
-              className="rounded-3xl bg-[#111111] p-8 text-center shadow-xl"
+              className="rounded-2xl bg-[#111111] p-6 text-center shadow-xl sm:rounded-3xl sm:p-8"
             >
               <div className="flex justify-center gap-1">
                 {Array.from({ length: 5 }).map((_, i) => (
@@ -332,22 +332,22 @@ export default function DiscoveryCall() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: 0.6 }}
-              className="rounded-3xl border border-slate-200 bg-white p-8 shadow-xl"
+              className="rounded-2xl border border-slate-200 bg-white p-5 shadow-xl sm:rounded-3xl sm:p-8"
             >
-              <h3 className="text-2xl font-extrabold text-[#111111]">
+              <h3 className="text-xl font-extrabold text-[#111111] sm:text-2xl">
                 Frequently Asked Questions
               </h3>
-              <div className="mt-6 space-y-4">
+              <div className="mt-4 space-y-3 sm:mt-6 sm:space-y-4">
                 {faqs.map((faq, i) => (
                   <div
                     key={i}
-                    className="rounded-2xl border border-slate-200 transition-colors duration-300"
+                    className="rounded-xl border border-slate-200 transition-colors duration-300 sm:rounded-2xl"
                   >
                     <button
                       onClick={() =>
                         setOpenFaq(openFaq === i ? null : i)
                       }
-                      className="flex w-full items-center justify-between px-6 py-4 text-left"
+                      className="flex w-full items-center justify-between px-4 py-3.5 text-left sm:px-6 sm:py-4"
                     >
                       <span
                         className={`text-sm font-semibold transition-colors duration-300 ${
@@ -357,9 +357,9 @@ export default function DiscoveryCall() {
                         {faq.q}
                       </span>
                       {openFaq === i ? (
-                        <ChevronDown className="h-5 w-5 shrink-0 text-emerald-600" />
+                        <ChevronDown className="h-4 w-4 shrink-0 text-emerald-600 sm:h-5 sm:w-5" />
                       ) : (
-                        <ChevronDown className="h-5 w-5 shrink-0 text-slate-400" />
+                        <ChevronDown className="h-4 w-4 shrink-0 text-slate-400 sm:h-5 sm:w-5" />
                       )}
                     </button>
                     <div
@@ -369,7 +369,7 @@ export default function DiscoveryCall() {
                         opacity: openFaq === i ? 1 : 0,
                       }}
                     >
-                      <p className="px-6 pb-4 text-sm leading-6 text-[#6B7280]">
+                      <p className="px-4 pb-3.5 text-sm leading-6 text-[#6B7280] sm:px-6 sm:pb-4">
                         {faq.a}
                       </p>
                     </div>
@@ -387,75 +387,75 @@ export default function DiscoveryCall() {
             transition={{ duration: 0.7, delay: 0.3 }}
             className="flex flex-col"
           >
-            <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-xl">
+            <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-xl sm:rounded-3xl sm:p-6">
               {/* Header */}
               <div className="flex flex-col items-center text-center">
-                <p className="text-base font-medium text-[#6B7280]">
+                <p className="text-sm font-medium text-[#6B7280] sm:text-base">
                   Select a date and time that works for you
                 </p>
 
                 {/* Logo */}
-                <div className="mt-4">
+                <div className="mt-3 sm:mt-4">
                   <Image
                     src="/images/logo.png"
                     alt="GrowHigh logo"
                     width={120}
                     height={36}
-                    className="h-9 w-auto"
+                    className="h-8 w-auto sm:h-9"
                   />
                 </div>
 
-                <h3 className="mt-4 text-xl font-extrabold text-[#111111]">
+                <h3 className="mt-3 text-lg font-extrabold text-[#111111] sm:mt-4 sm:text-xl">
                   Digustratup.io Free Strategy Call
                 </h3>
 
                 {/* Call Details */}
-                <div className="mt-4 flex flex-wrap items-center justify-center gap-3">
-                  <div className="flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-medium text-[#111111]">
-                    <Clock className="h-4 w-4 text-emerald-600" />
+                <div className="mt-3 flex flex-wrap items-center justify-center gap-2 sm:mt-4 sm:gap-3">
+                  <div className="flex items-center gap-1.5 rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-[#111111] sm:px-4 sm:py-2 sm:text-sm">
+                    <Clock className="h-3.5 w-3.5 text-emerald-600 sm:h-4 sm:w-4" />
                     30 min
                   </div>
-                  <div className="flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-medium text-[#111111]">
-                    <span className="h-4 w-4 rounded-full bg-blue-100 text-center text-xs leading-4 text-blue-600">
+                  <div className="flex items-center gap-1.5 rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-[#111111] sm:px-4 sm:py-2 sm:text-sm">
+                    <span className="h-3.5 w-3.5 rounded-full bg-blue-100 text-center text-xs leading-3.5 text-blue-600 sm:h-4 sm:w-4 sm:text-xs">
                       M
                     </span>
                     Mon, 20 July, 2026
                   </div>
-                  <div className="flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-medium text-[#111111]">
-                    <Globe className="h-4 w-4 text-yellow-600" />
+                  <div className="flex items-center gap-1.5 rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-[#111111] sm:px-4 sm:py-2 sm:text-sm">
+                    <Globe className="h-3.5 w-3.5 text-yellow-600 sm:h-4 sm:w-4" />
                     Asia/Karachi (GMT+5)
                   </div>
                 </div>
               </div>
 
               {/* Calendar Navigation */}
-              <div className="mt-6">
+              <div className="mt-5 sm:mt-6">
                 {/* Month/Year Navigation */}
                 <div className="flex items-center justify-between">
                   <button
                     onClick={prevMonth}
-                    className="flex h-8 w-8 items-center justify-center rounded-full border border-slate-200 text-slate-600 transition-all duration-200 hover:border-emerald-400 hover:text-emerald-600"
+                    className="flex h-7 w-7 items-center justify-center rounded-full border border-slate-200 text-slate-600 transition-all duration-200 hover:border-emerald-400 hover:text-emerald-600 sm:h-8 sm:w-8"
                   >
-                    <ChevronLeft className="h-4 w-4" />
+                    <ChevronLeft className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
                   </button>
-                  <span className="text-sm font-bold text-[#111111]">
+                  <span className="text-xs font-bold text-[#111111] sm:text-sm">
                     {months[currentMonth]} {currentYear}
                   </span>
                   <button
                     onClick={nextMonth}
-                    className="flex h-8 w-8 items-center justify-center rounded-full border border-slate-200 text-slate-600 transition-all duration-200 hover:border-emerald-400 hover:text-emerald-600"
+                    className="flex h-7 w-7 items-center justify-center rounded-full border border-slate-200 text-slate-600 transition-all duration-200 hover:border-emerald-400 hover:text-emerald-600 sm:h-8 sm:w-8"
                   >
-                    <ChevronRight className="h-4 w-4" />
+                    <ChevronRight className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
                   </button>
                 </div>
 
                 {/* Days of week header - clickable */}
-                <div className="mt-3 grid grid-cols-7 gap-1">
+                <div className="mt-2 grid grid-cols-7 gap-1">
                   {days.map((day) => (
                     <button
                       key={day}
                       onClick={() => handleDayHeaderClick(day)}
-                      className={`py-2 text-center text-xs font-bold uppercase tracking-wider transition-all duration-200 rounded-lg ${
+                      className={`py-1.5 text-center text-[10px] font-bold uppercase tracking-wider transition-all duration-200 rounded-md sm:py-2 sm:text-xs ${
                         selectedDay === day
                           ? "bg-[#22D3A6] text-white"
                           : "text-[#6B7280] hover:bg-slate-100"
@@ -467,13 +467,13 @@ export default function DiscoveryCall() {
                 </div>
 
                 {/* Calendar grid */}
-                <div className="mt-2 grid grid-cols-7 gap-1">
+                <div className="mt-1.5 grid grid-cols-7 gap-1 sm:mt-2">
                   {filteredDays.map((dayNum, i) => (
                     <button
                       key={i}
                       disabled={dayNum === null}
                       onClick={() => dayNum && handleDayClick(dayNum)}
-                      className={`flex h-10 w-full items-center justify-center rounded-xl text-sm font-medium transition-all duration-200 ${
+                      className={`flex h-9 w-full items-center justify-center rounded-lg text-xs font-medium transition-all duration-200 sm:h-10 sm:rounded-xl sm:text-sm ${
                         dayNum === null
                           ? "invisible"
                           : selectedDate === dayNum
@@ -488,15 +488,15 @@ export default function DiscoveryCall() {
               </div>
 
               {/* Time Slots */}
-              <div className="mt-6">
-                <h4 className="text-sm font-semibold uppercase tracking-wider text-[#6B7280]">
+              <div className="mt-5 sm:mt-6">
+                <h4 className="text-xs font-semibold uppercase tracking-wider text-[#6B7280] sm:text-sm">
                   Available Times
                 </h4>
-                <div className="mt-3 grid grid-cols-3 gap-2">
+                <div className="mt-2 grid grid-cols-4 gap-1.5 sm:mt-3 sm:grid-cols-3 sm:gap-2">
                   {["08:00PM", "08:30PM", "09:00PM", "09:30PM", "10:00PM", "10:30PM", "11:00PM"].map((time) => (
                     <button
                       key={time}
-                      className="rounded-xl border border-slate-200 bg-slate-50 py-2.5 text-sm font-medium text-[#111111] transition-all duration-200 hover:border-emerald-400 hover:bg-emerald-50 hover:text-emerald-600"
+                      className="rounded-lg border border-slate-200 bg-slate-50 py-2 text-xs font-medium text-[#111111] transition-all duration-200 hover:border-emerald-400 hover:bg-emerald-50 hover:text-emerald-600 sm:rounded-xl sm:py-2.5 sm:text-sm"
                     >
                       {time}
                     </button>
@@ -505,20 +505,20 @@ export default function DiscoveryCall() {
               </div>
 
               {/* Time Zone Selector */}
-              <div className="mt-6 relative">
-                <h4 className="text-sm font-semibold uppercase tracking-wider text-[#6B7280]">
+              <div className="mt-5 relative sm:mt-6">
+                <h4 className="text-xs font-semibold uppercase tracking-wider text-[#6B7280] sm:text-sm">
                   Time Zone
                 </h4>
                 <button
                   onClick={() => setTzOpen(!tzOpen)}
-                  className="mt-2 flex w-full items-center justify-between rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium text-[#111111] transition-all duration-200 hover:border-emerald-400"
+                  className="mt-1.5 flex w-full items-center justify-between rounded-lg border border-slate-200 bg-slate-50 px-3 py-2.5 text-xs font-medium text-[#111111] transition-all duration-200 hover:border-emerald-400 sm:mt-2 sm:rounded-xl sm:px-4 sm:py-3 sm:text-sm"
                 >
-                  <div className="flex items-center gap-2">
-                    <Globe className="h-4 w-4 text-emerald-600" />
-                    {timeZone}
+                  <div className="flex items-center gap-1.5 sm:gap-2">
+                    <Globe className="h-3.5 w-3.5 text-emerald-600 sm:h-4 sm:w-4" />
+                    <span className="truncate">{timeZone}</span>
                   </div>
                   <ChevronDown
-                    className={`h-4 w-4 text-slate-400 transition-transform duration-200 ${
+                    className={`h-3.5 w-3.5 text-slate-400 transition-transform duration-200 sm:h-4 sm:w-4 ${
                       tzOpen ? "rotate-180" : ""
                     }`}
                   />
@@ -526,7 +526,7 @@ export default function DiscoveryCall() {
 
                 {/* Time Zone Dropdown */}
                 {tzOpen && (
-                  <div className="absolute z-20 mt-1 w-full rounded-xl border border-slate-200 bg-white shadow-xl">
+                  <div className="absolute z-20 mt-1 w-full rounded-lg border border-slate-200 bg-white shadow-xl sm:rounded-xl">
                     {timeZones.map((tz) => (
                       <button
                         key={tz}
@@ -534,13 +534,13 @@ export default function DiscoveryCall() {
                           setTimeZone(tz);
                           setTzOpen(false);
                         }}
-                        className={`flex w-full items-center gap-2 px-4 py-2.5 text-left text-sm transition-colors duration-200 hover:bg-emerald-50 ${
+                        className={`flex w-full items-center gap-2 px-3 py-2 text-left text-xs transition-colors duration-200 hover:bg-emerald-50 sm:px-4 sm:py-2.5 sm:text-sm ${
                           timeZone === tz
                             ? "bg-emerald-50 text-emerald-600 font-semibold"
                             : "text-[#111111]"
                         }`}
                       >
-                        <Globe className="h-4 w-4 shrink-0 text-slate-400" />
+                        <Globe className="h-3 w-3 shrink-0 text-slate-400 sm:h-4 sm:w-4" />
                         {tz}
                       </button>
                     ))}

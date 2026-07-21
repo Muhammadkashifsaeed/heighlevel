@@ -61,7 +61,7 @@ const cardVariants = {
 
 export default function GrowSaasMarketing() {
   return (
-    <section className="relative overflow-hidden bg-[#050505] py-24 sm:py-32">
+    <section className="relative overflow-hidden bg-[#050505] py-12 sm:py-16 md:py-24">
       {/* Background layers */}
       <div className="absolute inset-0">
         <div
@@ -123,7 +123,7 @@ export default function GrowSaasMarketing() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="mx-auto max-w-4xl text-center text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-5xl md:text-6xl lg:text-[72px]"
+          className="mx-auto max-w-4xl text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[72px] font-extrabold leading-tight tracking-tight text-white"
         >
           The Engine to
           <br />
@@ -138,14 +138,14 @@ export default function GrowSaasMarketing() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="mx-auto mt-6 max-w-[850px] text-center text-lg leading-relaxed text-neutral-400 sm:text-xl"
+          className="mx-auto mt-4 max-w-[850px] text-center text-sm sm:text-base md:text-lg leading-relaxed text-neutral-400"
         >
           We engineer the entire marketing machine that acquires, nurtures, and
           closes your SaaS clients automatically.
         </motion.p>
 
         {/* CARDS GRID */}
-        <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-12">
+        <div className="mt-12 grid grid-cols-1 gap-4 sm:gap-6 md:gap-8 sm:grid-cols-2 lg:grid-cols-12">
           {cards.map((card, i) => (
             <motion.div
               key={card.num}
@@ -159,26 +159,26 @@ export default function GrowSaasMarketing() {
                 borderColor: "rgba(52, 211, 153, 0.5)",
                 boxShadow: "0 20px 40px -12px rgba(16, 185, 129, 0.2)",
               }}
-              className={`group relative flex flex-col rounded-[28px] border border-white/10 bg-[#111] p-8 shadow-sm backdrop-blur-md transition-all duration-300 hover:border-emerald-300/50 hover:bg-[#161616] hover:shadow-2xl ${card.size}`}
+              className={`group relative flex flex-col rounded-2xl sm:rounded-[28px] border border-white/10 bg-[#111] p-5 sm:p-6 md:p-8 shadow-sm backdrop-blur-md transition-all duration-300 hover:border-emerald-300/50 hover:bg-[#161616] hover:shadow-2xl col-span-1 sm:col-span-2 lg:col-span-6 ${card.shadow}`}
             >
               {/* Inner glow */}
               <div className="pointer-events-none absolute inset-0 rounded-[28px] bg-emerald-500/5 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
               {/* Icon */}
-              <div className={`flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-white/5 shadow-lg transition-all duration-300 group-hover:border-emerald-400/40 group-hover:shadow-[0_0_20px_rgba(16,185,129,0.3)] group-hover:-translate-y-1`}>
+              <div className={`flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/5 shadow-lg transition-all duration-300 group-hover:border-emerald-400/40 group-hover:shadow-[0_0_20px_rgba(16,185,129,0.3)] group-hover:-translate-y-1 sm:h-12 sm:w-12`}>
                 <card.Icon className={`h-6 w-6 ${card.color} transition-all duration-300 group-hover:drop-shadow-[0_0_8px_rgba(52,211,153,0.6)]`} />
               </div>
 
               {/* Number */}
-              <span className="mt-6 text-5xl font-bold text-white/10 transition-colors duration-300 group-hover:text-emerald-200/30">
+              <span className="mt-4 sm:mt-6 text-3xl sm:text-4xl md:text-5xl font-bold text-white/10 transition-colors duration-300 group-hover:text-emerald-200/30">
                 {card.num}
               </span>
 
               {/* Content */}
-              <h3 className="mt-4 text-[34px] font-bold text-white leading-tight">
+              <h3 className="mt-3 sm:mt-4 text-xl sm:text-2xl md:text-[34px] font-bold text-white leading-tight">
                 {card.title}
               </h3>
-              <p className="mt-3 text-base leading-relaxed text-neutral-400">
+              <p className="mt-2 sm:mt-3 text-sm sm:text-base leading-relaxed text-neutral-400">
                 {card.desc}
               </p>
             </motion.div>
