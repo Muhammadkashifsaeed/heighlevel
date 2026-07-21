@@ -111,7 +111,7 @@ export default function HeroSection() {
             <h1 className="text-4xl font-bold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
               Stop Building Alone.{" "}
               <span className="bg-[linear-gradient(90deg,#22c55e,#34d399,#06b6d4,#3b82f6,#6366f1,#eab308)] bg-clip-text text-transparent drop-shadow-[0_0_25px_rgba(34,197,94,0.25)]">
-                Start Growing
+                Start DigiStartup
               </span>{" "}
               With The Right Team.
             </h1>
